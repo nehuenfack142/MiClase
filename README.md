@@ -1,2 +1,0 @@
-# MiClase
-Aula Virtual 
