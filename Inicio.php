@@ -658,7 +658,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-icon-circle u-text-custom-color-5 u-block-c459-4" href="#carousel_9e56" role="button" data-u-slide="next">
         <span aria-hidden="true">
           <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"><2/path></svg>
         </span>
         <span class="sr-only">Next</span>
       </a>
@@ -667,37 +667,33 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
         <div class="u-align-center u-container-style u-custom-color-5 u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-custom-font u-font-oswald u-text u-text-custom-color-3 u-text-1">contactanos</h2>
-            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-form u-form-1">
-              <form action="#" method="POST" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
-                <div class="u-form-group u-form-name u-form-group-1">
-                  <label for="name-5a14" class="u-custom-font u-font-oswald u-form-control-hidden u-label u-text-custom-color-3" wfd-invisible="true"></label>
-                  <input type="text" placeholder="ingresa tu nombre" id="name-5a14" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-grey-10 u-input u-input-rectangle" required="">
-                </div>
-                <div class="u-form-email u-form-group u-form-group-2">
-                  <label for="email-5a14" class="u-custom-font u-font-oswald u-form-control-hidden u-label u-text-custom-color-3" wfd-invisible="true">Email</label>
-                  <input type="email" placeholder="ingresa tu mail" id="email-5a14" name="email" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-grey-10 u-input u-input-rectangle" required="">
-                </div>
-                <div class="u-form-group u-form-message u-form-group-3">
-                  <label for="message-5a14" class="u-custom-font u-font-oswald u-form-control-hidden u-label u-text-custom-color-3" wfd-invisible="true">Message</label>
-                  <textarea placeholder="ingresa tu mensaje" rows="4" cols="50" id="message-5a14" name="message" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-grey-10 u-input u-input-rectangle" required=""></textarea>
-                </div>
-                <div class="u-align-center u-form-group u-form-submit u-form-group-4">
-                  <a href="#" class="u-btn u-btn-submit u-button-style u-none u-text-custom-color-3 u-text-hover-white u-btn-1">Submit</a>
-                  <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
-                </div>
-                <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
-                <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
-                <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
-              </form>
+            <h2 class="u-custom-font u-font-oswald u-text u-text-custom-color-3 u-text-1" style="left: -30px ">contactanos</h2>
+            <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-form u-form-2">
+              <form method="POST">
+                  
+      
+                  <select name="mail" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
+                    <option value="triaccanehuen.nt56@gmail.com">Secretaria</option>
+                    <option value="josueluna650">baños</option>
+                    <option value="nehuentriacca.nt56@gmail.com">preceptoria</option>
+                 
+                  </select>
+                
+                  <input type="text" placeholder ="Asunto" name="asunto" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
+                  <textarea placeholder ="Mensaje" name="msg" style="width: 420px; margin: auto; margin-top: 40px; " ></textarea>
+                  <input type="submit" name="enviar" style="width: 100px; margin: 150px; margin-top: 40px; " >
+                </form>
+              
+              
+              </div>
             </div>
           </div>
         </div>
-        <img src="images/wqe-min.jpg" alt="" class="u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="800" data-image-height="948">
-        <div class="u-list u-list-1">
+        <img src="images/wqe-min.jpg" alt="" class="u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="800" data-image-height="945" style="margin: 40px; top: -950px">
+        <div class="u-list u-list-1" style="left: -10px; top: -850px; ">
           <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-list-item u-palette-5-dark-3 u-repeater-item u-list-item-1">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 513.64 513.64" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b103"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 513.64 513.64" x="0px" y="0px" id="svg-b103" style="enable-background:new 0 0 513.64 513.64;"><g><g><path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"></path>
+            <div class="u-container-style u-list-item u-palette-5-dark-3 u-repeater-item u-list-item-1" >
+              <div class="u-container-layout u-similar-container u-container-layout-2" ><span class="u-icon u-icon-circle u-text-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 513.64 513.64" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b103"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 513.64 513.64" x="0px" y="0px" id="svg-b103" style="enable-background:new 0 0 513.64 513.64;"><g><g><path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"></path>
 </g>
 </g></svg></span>
                 <h5 class="u-text u-text-2">Call Us</h5>
@@ -758,5 +754,8 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         <span>Website Builder Software</span>
       </a>. 
     </section>
+    <?php
+                include("Correo.php");
+              ?>
   </body>
 </html>
