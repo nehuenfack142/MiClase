@@ -673,9 +673,10 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   
       
                   <select name="mail" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
-                    <option value="triaccanehuen.nt56@gmail.com">Secretaria</option>
-                    <option value="josueluna650">baños</option>
-                    <option value="nehuentriacca.nt56@gmail.com">preceptoria</option>
+                    <option value="josueluna650@gmail.com">Mail1</option>
+                    <option value="01josueluna@gmail.com">Mail2</option>
+                    <option value="01lunajosue@gmail.com">Mail3</option>
+                    <option value="triaccanehuen.nt56@gmail.com">Mail4</option>
                  
                   </select>
                 

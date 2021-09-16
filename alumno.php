@@ -85,10 +85,12 @@
               <div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
                         <form method="POST" style="width: 700px; margin: auto; background-color: #89d0ca; margin-top: 100px;">
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                            <option value="triaccanehuen.nt56@gmail.com">Secretaria</option>
-                            <option value="josueluna650">baños</option>
-                            <option value="nehuentriacca.nt56@gmail.com">preceptoria</option>
+                            <option value="josueluna650@gmail.com">Profe1</option>
+                            <option value="01josueluna@gmail.com">Profe2</option>
+                            <option value="01lunajosue@gmail.com">Profe3</option>
+                            <option value="triaccanehuen.nt56@gmail.com">Profe4</option>
                           </select>
+
                           <input type="text" placeholder ="Asunto" name="asunto" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
                           <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;"></textarea>
                           <input type="submit" name="enviar" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
