@@ -10,7 +10,7 @@ if (isset($_POST['register']))
 	    $fechareg = date("d/m/y");
 	    $contraseña = $_POST['contraseña'];
 
-	    $cons=mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
+	    $cons=$conex->query("SELECT * FROM datos where email ='".$email."' and contraseña = '".$contraseña."' ");
 	    	$filas= mysqli_num_rows($cons);
 
 	    	if($filas == 1)
