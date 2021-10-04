@@ -35,6 +35,13 @@
         <a href="Register.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-2">Register</a>
         <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
       </div></header>
+
+
+
+
+
+
+
     <section class="u-clearfix u-custom-color-5 u-section-1" id="sec-8adc">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-custom-color-3 u-preserve-proportions u-shape u-shape-rectangle u-shape-1"></div>
@@ -43,28 +50,27 @@
         <div class="u-grey-15 u-preserve-proportions u-shape u-shape-rectangle u-shape-4"></div>
         <img class="u-image u-image-default u-image-1" src="images/programacion-para-nios-unir-3.jpg" alt="" data-image-width="661" data-image-height="382">
         <div class="u-form u-form-1">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
-            <div class="u-form-group u-form-name">
-              <label for="name-de63" class="u-form-control-hidden u-label"></label>
-              <input type="text" placeholder="e-mail" id="name-de63" name="em" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
-            </div>
-            <div class="u-form-email u-form-group">
-              <label for="email-de63" class="u-form-control-hidden u-label"></label>
-              <input type="email" placeholder="contraceña" id="email-de63" name="cc" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
-            </div>
-            <div class="u-align-right u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style u-custom-font u-font-oswald u-btn-1">Aceptar</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success"> Gracias! Tu mensaje ha sido enviado. </div>
-            <div class="u-form-send-error u-form-send-message"> No se puede enviar su mensaje. Por favor, corrija los errores y vuelva a intentarlo. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
+          <form method="post">
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="password" name="contraseña" placeholder="Contraseña"><br>
+                <input type="submit" name="register"><br>
           </form>
+             <?php
+              include("logear.php");
+             ?>        
         </div>
+              
         <h1 class="u-text u-text-custom-color-3 u-text-default u-text-1">Iniciar sesion</h1>
       </div>
     </section>
     
+
+
+
+
+
+
+
     
     <footer class="u-clearfix u-custom-color-3 u-footer" id="sec-8a17"><div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
