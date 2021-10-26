@@ -11,23 +11,23 @@ if (isset($_POST['register']))
 	    $contraseña = $_POST['contraseña'];
 
 	    $cons=$conex->query("SELECT * FROM datos where email ='".$email."' and contraseña = '".$contraseña."' ");
-	    	$filas= mysqli_num_rows($cons);
-
+	    $filas= mysqli_num_rows($cons);
+	    	
+	 }
 	    	if($filas == 1){
-	    		 session_start();
+	    		session_start();
            $_SESSION['email']=$email;
-	    		 header("Location: http://localhost/Miclase/Index2.php");
+	    			header("Location: http://localhost/Miclase/cursos.php");
+	    		}
+          else if ($filas == 0){
 
-		}
-		    	else if ($filas == 0)
+	    		echo "Datos incorrectos";}
 
-	    		echo "Datos incorrectos";
-
+}
 
 
+    
 
-    }
-
-	}
+	
 
 ?>
