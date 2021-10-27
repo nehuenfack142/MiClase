@@ -3,7 +3,7 @@
 $inc = include("con_db.php");
 session_start();
   $seccion = $_SESSION['email'];
-	$tipo = $_SESSION['tipousuario'];
+	
 	{
 	$cons = "SELECT * FROM datos where email='".$seccion."'";
 	$res = mysqli_query($conex, $cons);
