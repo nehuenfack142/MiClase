@@ -50,7 +50,8 @@
               <font color="#ffffff">Profesora: Mirta Morales</font>
             </h6>
             <div class="u-list u-list-1">
-              <div class="u-repeater u-repeater-1">
+              <!-- 
+                <div class="u-repeater u-repeater-1">
                 <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-1">
                   <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
                     <a href="Profesor.html" data-page-id="575600749" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-1">7° C&nbsp;</a>
@@ -84,7 +85,74 @@
                     <a href="https://nicepage.com/k/offer-html-templates" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-6"> 2° D<br>
                     </a>
                   </div>
-                </div>
+                </div> -->
+
+                
+               <!--<form name = "selector">
+                <label for="cursos"></label>
+                <br>
+                <select name="cursos" id="cursos" multiple="multiple">
+                  <option>1°C</option>
+                  <option>2°A</option>
+                  <option>3°E</option>
+                  <option>4°B</option>
+                  <option>5°D</option>
+                  <option>6°H</option>
+                  <option>7°G</option>
+                </select><br>
+                <input type="button" id="btn" value="Contar" onclick="contar();">
+                </form>
+                <script >
+                  function contar(){
+                  n = 0;
+                  lista = document.selector.cursos
+                  for (var i =0; i<lista.options.length; i++){
+                      if (lista.options[i].selected ) {
+                        document.write("<br>"+lista.options[i].innerHTML)
+                        n++;
+                      }
+                    }
+                    document.write("<br> Estos cursos : "+ n +" ");
+                }</script>
+              -->
+             
+              <input  type="submit" id = "mom" value= "2">  <!-- Cantidad de cursos -->
+              <input  type="submit" id = "curso" value= "7°C" > 
+               <div id="listaa" class="u-repeater u-repeater-1"> 
+                <script >
+                  var mom = document.getElementById("mom").value;
+                  var curso = document.getElementById("curso").value;
+                  
+                  
+                  for (let step = 0; step < mom; step++) {
+                    
+                 
+                    var cuadrado = document.createElement("div");
+                    cuadrado.style.backgroundColor ="#89D0CA";
+                    cuadrado.style.borderRadius = "20px";
+                    cuadrado.style.minHeight = "300px";
+                    cuadrado.style.maxHeight = "400px";
+                    cuadrado.style.padding = "150px 110px 120px 130px";
+                    cuadrado.style.fontFamily = "Oswald ";
+                    cuadrado.style.fontSize = "48px";
+                    
+                    document.getElementById("listaa").appendChild(cuadrado);
+
+                    var parrafo = document.createElement("a");
+                    parrafo.style = "color : #5E35B1";
+                    
+                    
+                    parrafo.href = "Profesor.html";
+                    cuadrado.appendChild(parrafo);
+
+                    var texto = document.createTextNode(curso);
+
+                    parrafo.appendChild(texto);
+                  }
+                </script> 
+              
+
+                
               </div>
             </div>
           </div>
