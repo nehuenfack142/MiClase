@@ -18,17 +18,13 @@
     
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Oswald:200,300,400,500,600,700">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <style>
+        .mostrar{
+        float: right;
+        position: absolute;
+        z-index:1 ;
+      }</style>
+
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -44,12 +40,12 @@
   <body class="u-body"><header class="u-clearfix u-custom-color-3 u-header" id="sec-ee9f" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280"><img src="images/logopngfinal1.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-          
+         <div class=mostrar.php> 
         <?php
         include("mostrar.php"); 
         ?><br><br>
-        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">Cerrar Sesión</a>
         
+        </div>
       </div></header>
     <section class="u-clearfix u-custom-color-3 u-section-1" id="sec-653a">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -747,15 +743,9 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         </div>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+      <a class="u-link" href="politca-y-terminos.html" target="_blank">
+        <span>Terminos y condicines</span>
       </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
     </section>
     <?php
                 include("Correo.php");

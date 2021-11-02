@@ -38,9 +38,8 @@
        <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/logopngfinal1.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        <a href="Register.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">Register</a>
-        <a href="login.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-5 u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-2">iniciar sesion</a>
-        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
+        
+        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" style="">volver atras</a>
       </div></header> 
     <section class="u-clearfix u-image u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-section-1" id="sec-832e">
       <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
@@ -249,27 +248,21 @@
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-custom-font u-font-oswald u-text u-text-custom-color-3 u-text-1">contactanos</h2>
             <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-form u-form-1">
-              <form action="#" method="POST" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form">
-                <div class="u-form-group u-form-name u-form-group-1">
-                  <label for="name-5a14" class="u-custom-font u-font-oswald u-form-control-hidden u-label u-text-custom-color-3" wfd-invisible="true"></label>
-                  <input type="text" placeholder="ingresa tu nombre" id="name-5a14" name="name" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-grey-10 u-input u-input-rectangle" required="">
-                </div>
-                <div class="u-form-email u-form-group u-form-group-2">
-                  <label for="email-5a14" class="u-custom-font u-font-oswald u-form-control-hidden u-label u-text-custom-color-3" wfd-invisible="true">Email</label>
-                  <input type="email" placeholder="ingresa tu mail" id="email-5a14" name="email" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-grey-10 u-input u-input-rectangle" required="">
-                </div>
-                <div class="u-form-group u-form-message u-form-group-3">
-                  <label for="message-5a14" class="u-custom-font u-font-oswald u-form-control-hidden u-label u-text-custom-color-3" wfd-invisible="true">Message</label>
-                  <textarea placeholder="ingresa tu mensaje" rows="4" cols="50" id="message-5a14" name="message" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-grey-10 u-input u-input-rectangle" required=""></textarea>
-                </div>
-                <div class="u-align-center u-form-group u-form-submit u-form-group-4">
-                  <a href="#" class="u-btn u-btn-submit u-button-style u-none u-text-custom-color-3 u-text-hover-white u-btn-1">Submit</a>
-                  <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
-                </div>
-                <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has been sent. </div>
-                <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message. Please fix errors then try again. </div>
-                <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
-              </form>
+              <form method="POST">
+                  
+      
+                  <select name="mail" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
+                    <option value="josueluna650@gmail.com">Secretaria</option>
+                    <option value="01josueluna@gmail.com">Desaroyadores</option>
+                    <option value="01lunajosue@gmail.com">Servivcio tecnico</option>
+          
+                 
+                  </select>
+                
+                  <input type="text" placeholder ="Asunto" name="asunto" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
+                  <textarea placeholder ="Mensaje" name="msg" style="width: 420px; margin: auto; margin-top: 40px; max-height: 200px; max-width: 420px; min-height: 40px; min-width: 420px" ></textarea>
+                  <input type="submit" name="enviar" style="width: 100px; margin: 100px; margin-top: 40px;  height: 40px; width: 150px;" >
+                </form>
             </div>
           </div>
         </div>
@@ -330,15 +323,10 @@
         </div>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
-        <span>HTML Template</span>
+      <a class="u-link" href="politca-y-terminos.html" target="_blank">
+        <span>Terminos y condicines</span>
       </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
     </section>
+
   </body>
 </html>

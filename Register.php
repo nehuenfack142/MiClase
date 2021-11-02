@@ -70,7 +70,7 @@
 
                   <form method="post">
     	               <h1>Registro</h1>
-    	                <input type="text" name="name" placeholder="Nombre completo"><br>
+    	                <input type="text" name="name" placeholder="Nombre completo" ><br>
     	                 <input type="email" name="email" placeholder="Email"><br>
                        <input type="password" name="contraseña" placeholder="Contraseña"><br>
     	                  <input type="submit" name="register"><br>
@@ -109,16 +109,11 @@
           </a>
         </div>
       </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+   <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="politca-y-terminos.html" target="_blank">
+        <span>Terminos y condicines</span>
       </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>.
     </section>
+
   </body>
 </html>
