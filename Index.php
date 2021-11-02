@@ -663,7 +663,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         <span class="sr-only">Next</span>
       </a>
     </section>
-    <section class="u-clearfix u-custom-color-3 u-section-10" id="sec-a3ca">
+    <section class="u-clearfix u-custom-color-3 u-section-10" id="sec-a3ca" style="max-height: 1000px">
       <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-sheet-1">
         <div class="u-align-center u-container-style u-custom-color-5 u-expanded-width-xs u-group u-group-1">
           <div class="u-container-layout u-container-layout-1">
@@ -673,16 +673,16 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   
       
                   <select name="mail" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
-                    <option value="josueluna650@gmail.com">Mail1</option>
-                    <option value="01josueluna@gmail.com">Mail2</option>
-                    <option value="01lunajosue@gmail.com">Mail3</option>
-                    <option value="triaccanehuen.nt56@gmail.com">Mail4</option>
+                    <option value="josueluna650@gmail.com">Secretaria</option>
+                    <option value="01josueluna@gmail.com">Desaroyadores</option>
+                    <option value="01lunajosue@gmail.com">Servivcio tecnico</option>
+          
                  
                   </select>
                 
                   <input type="text" placeholder ="Asunto" name="asunto" required="" style="width: 420px; margin: auto; margin-top: 40px; " >
-                  <textarea placeholder ="Mensaje" name="msg" style="width: 420px; margin: auto; margin-top: 40px; " ></textarea>
-                  <input type="submit" name="enviar" style="width: 100px; margin: 150px; margin-top: 40px; " >
+                  <textarea placeholder ="Mensaje" name="msg" style="width: 420px; margin: auto; margin-top: 40px; max-height: 200px; max-width: 420px; min-height: 40px; min-width: 420px" ></textarea>
+                  <input type="submit" name="enviar" style="width: 100px; margin: 100px; margin-top: 40px;  height: 40px; width: 150px;" >
                 </form>
               
               
@@ -745,15 +745,9 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         </div>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+      <a class="u-link" href="politca-y-terminos.html" target="_blank">
+        <span>Terminos y condicines</span>
       </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
     </section>
     <?php
                 include("Correo.php");

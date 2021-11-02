@@ -209,15 +209,9 @@
         </div>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
-        <span>Free HTML Templates</span>
+      <a class="u-link" href="politca-y-terminos.html" target="_blank">
+        <span>Terminos y condicines</span>
       </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/wysiwyg-html-editor" target="_blank">
-        <span>HTML editor</span>
-      </a>. 
     </section>
     <script>
       function abrir(){
