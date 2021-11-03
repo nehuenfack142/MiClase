@@ -20,7 +20,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Site1",
-		"logo": "images/default-logo.png",
+		"logo": "images/LOGO.png",
 		"sameAs": []
 }</script>
     <meta name="theme-color" content="#478ac9">
@@ -30,7 +30,7 @@
   </head>
   <body class="u-body"><header class="u-clearfix u-custom-color-3 u-header" id="sec-ee9f" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-sheet-1">
         <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
-          <img src="images/logopngfinal1.png" class="u-logo-image u-logo-image-1" data-image-width="96">
+          <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
         <a href="Register.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-2">Register</a>
         <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>

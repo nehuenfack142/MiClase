@@ -29,7 +29,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "Site1",
-		"logo": "images/logopngfinal1.png",
+		"logo": "images/LOGO.png",
 		"sameAs": []
 }</script>
     <meta name="theme-color" content="#478ac9">
@@ -38,7 +38,7 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body"><header class="u-clearfix u-custom-color-3 u-header" id="sec-ee9f" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280"><img src="images/logopngfinal1.png" class="u-logo-image u-logo-image-1" data-image-width="96">
+        <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280"><img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
          <div class=mostrar.php> 
         <?php
