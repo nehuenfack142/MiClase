@@ -115,8 +115,29 @@
                     document.write("<br> Estos cursos : "+ n +" ");
                 }</script>
               -->
-             
-              <input  type="submit" id = "mom" value= "2">  <!-- Cantidad de cursos -->
+             <input type="submit"name="colores" id="colores" value="rojo, alejo, juan">
+             <input type="button" id="btn" value="VER" onclick="ver();">
+              <script>
+                var color = document.getElementById("colores").value;
+                document.write(color);
+                function ver(){
+                var color = document.getElementById("colores").value;
+                for(var i=0;i<color.length; i++){
+                  document.write(color[i]);
+                }}
+              </script>
+
+
+
+
+
+
+
+
+
+
+             <!--
+              <input  type="submit" id = "mom" value= "2">   Cantidad de cursos
               <input  type="submit" id = "curso" value= "7°C" > 
                <div id="listaa" class="u-repeater u-repeater-1"> 
                 <script >
@@ -150,7 +171,7 @@
                     parrafo.appendChild(texto);
                   }
                 </script> 
-              
+              -->
 
                 
               </div>
