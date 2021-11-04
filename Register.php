@@ -35,36 +35,56 @@
         <a href="login.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-5 u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-2">iniciar sesion</a>
         <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
       </div></header>
-    <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-161e">
-      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <div class="u-container-style u-grey-15 u-group u-shape-rectangle u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <img class="u-image u-image-default u-image-1" src="images/negritsa.jpg" alt="" data-image-width="1024" data-image-height="680">
-          </div>
-        </div>
-        <div class="u-custom-color-2 u-shape u-shape-rectangle u-shape-1"></div>
-        <div class="u-container-style u-grey-25 u-group u-shape-rectangle u-group-2">
-          <div class="u-container-layout u-container-layout-2">
+    
+      <section class="u-clearfix u-custom-color-5 u-section-1" id="sec-8adc" style="height: 800px">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1" style="height: 700px; ">
+         <h1 class="u-text u-text-custom-color-3 u-text-default u-text-1" style="left: 800px">Registro</h1>
+
+        <div class="u-container-style u-grey-15 u-group u-shape-rectangle u-group-1"style="height: 620px;background: #5e35b1; width: 1200px ">
+
+         <div class="u-container-style u-grey-25 u-group u-shape-rectangle u-group-2" style=" padding:20px 0px 520px 10px; width: 630px; margin: 20px 0px 0px 20px ; height: 550px ">
+          
+            <div class="u-container-layout u-container-layout-1">
+            <img class="u-image u-image-default u-image-1" src="images/negritsa.jpg" alt="" data-image-width="1024" data-image-height="680" style="width:600px; height: 500px; ">
+           </div>
+            
+            <div class="u-custom-color-2 u-shape u-shape-rectangle u-shape-1"></div>
+            
+              <div class="u-container-layout u-container-layout-2">
 
 
 
-                  <form method="post">
-    	               <h1>Registro</h1>
-    	                <input type="text" name="name" placeholder="Nombre completo" ><br>
-    	                 <input type="email" name="email" placeholder="Email"><br>
-                       <input type="password" name="contraseña" placeholder="Contraseña"><br>
-    	                  <input type="submit" name="register"><br>
-                        <a href="login.php">Log In</a>
+                  <form method="post" style="left: 80px; margin: 50px 200px 0px 0px " >
+    	               
+    	                <input type="text" name="name" placeholder="Nombre completo" style="width: 400px;  margin: 10px " ><br>
+
+    	                 <input type="email" name="email" placeholder="Email" style="width: 400px;  margin: 10px "><br>
+
+                       <input type="password" name="contraseña" placeholder="Contraseña" style="width: 400px;  margin: 10px "><br>
+
+
+    	                  <input type="submit" name="register" style="margin-left: 150px;background-color: #89d0ca; 
+  color: white;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;"></imput>
+                        
                   </form>
-        <?php
-        include("registrar.php");
-        ?>
+              <?php
+              include("registrar.php");
+              ?>
               </form>
+             </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      </div>
+        </section>
+    
 
 
     <footer class="u-clearfix u-custom-color-1 u-footer" id="sec-a0f2"><div class="u-clearfix u-sheet u-sheet-1">
