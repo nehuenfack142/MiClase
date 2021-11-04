@@ -1,15 +1,18 @@
 <?php
 
 include("con_db.php");
+
 if (isset($_POST['guardar'])) {
-    if (strlen($_POST['link']) >= 1) {
-	    $link = trim($_POST['link']);
-	    $cursos = trim($_POST['curso']);
-	    $consulta = "INSERT INTO link(link,curso) VALUES ('$link','$cursos')";
+    if (strlen($_POST['name']) >= 1) {
+	    $name = trim($_POST['name']);
+	    $email = trim($_POST['email']);
+	    $cursos = trim($_POST['cursos']);
+
+	    $consulta = "UPDATE datos SET cursos ='".$cursos."' WHERE email like '".$email."' and tipousuario like 'Alumno'";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) {
 	    	?> 
-	    	<p>¡Se ha subido correctamente!</p>
+	    	
            <?php
 	    } else {
 	    	?> 
@@ -20,7 +23,7 @@ if (isset($_POST['guardar'])) {
 	    	?> 
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
            <?php
-    }
+    }//
 }
 
 ?>

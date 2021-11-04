@@ -6,12 +6,12 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>preceptor</title>
+    <title>asignar</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="preceptor.css" media="screen">
+<link rel="stylesheet" href="asignar.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.28.7, nicepage.com">
+    <meta name="generator" content="Nicepage 3.29.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
     
@@ -24,28 +24,28 @@
 		"sameAs": []
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="preceptor">
+    <meta property="og:title" content="asignar">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body"><header class="u-clearfix u-custom-color-3 u-header" id="sec-ee9f" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
+        <a href="index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        <a href="308929996" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">Register</a>
-        <a href="206163820" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-5 u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-2">iniciar sesion</a>
-        <a href="Inicio.html" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
+        <a href="preceptor.html" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">volver atras</a>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-9027">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-container-style u-grey-25 u-group u-radius-15 u-shape-round u-group-1">
-          <div class="u-container-style u-custom-color-3 u-container-layout u-valign-top u-container-layout-1">
-            
-              
-                <h1 class="u-text u-text-1">Asignar</h1>
-                   <input class="u-text u-text-1" type="text" name="name" placeholder="Nombre completo" style="color: #000000"><br>
-                  <input class="u-text u-text-1" type="email" name="email" placeholder="ejemplomail"style="color: #000000"><br>
-                  <select class="u-text u-text-1" type="text" name="cursos" multiple="multiple" style="color: #000000">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"></div>
+                <h1 class="u-text u-text-body-alt-color u-text-1">Asignar</h1>
+                <form method="POST">
+                <input placeholder="Nombre" class=" u-text-3" type="text" name="name">
+                <input placeholder="ejemplomail@gmail.com" class=" u-text-3" type="email" name="email">
+                <select placeholder="Curso:" class=" u-text-3" type="text" name="cursos">
                   <option disabled="">Seleccione el año al que pertenece:</option>
                   <option>1°A</option>
                   <option>1°B</option>
@@ -68,10 +68,14 @@
                   <option>7°A</option>
                   <option>7°B</option>
                   <option>7°C</option>
-                  
-                </select><br>
-                <input class="u-text u-text-1 u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5"type="button" id="btn" value="Guardar" style="color: #000000"onclick="">
-                
+                </select>
+               
+                <input type="submit" name="guardar" href="https://nicepage.com/static-site-generator" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1"> 
+              </form>
+
+                    <?php
+                     include("asignarAl.php");
+                    ?>
               </div>
             </div>
           </div>
