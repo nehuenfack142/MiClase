@@ -4,13 +4,13 @@ if(!isset($_SESSION)){
 session_start();
 $seccion=$_SESSION['email'];}
 {
-$resultado = mysqli_query($conex,"SELECT * FROM escuela where email ='".$seccion."'" );
+$resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
 
 	if ($resultado) {
 	  		while ($row = $resultado -> fetch_array()){
 			$cursos = $row['cursos'];
 			$id = $row['id'];
-			$cons=$conex->query("SELECT id FROM escuela where email ='".$email."' and id = '".$id."' ");
+			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' and id = '".$id."' ");
 			$filas= mysqli_num_rows($cons);
 			
 
@@ -24,7 +24,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM escuela where email ='".$seccion
 			
 
 			<?php 
-				$tabla = mysqli_query($conex,"SELECT * FROM escuela where email ='".$email."' and id = '".$id."'");
+				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' and id = '".$id."'");
 
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class=datos2>
