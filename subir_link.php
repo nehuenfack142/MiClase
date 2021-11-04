@@ -8,7 +8,7 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>subir Link</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="subir-Link.css" media="screen">
+<link rel="stylesheet" href="subirlink.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.29.1, nicepage.com">
@@ -42,9 +42,41 @@
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"></div>
                 <h1 class="u-text u-text-body-alt-color u-text-1">Subir</h1>
-                <h1 class="u-text u-text-body-alt-color u-text-2">Hola aca podes poner tu cuadro de texto para poner tu link de google forms<br>
+                <div style="margin: 20px 10px 10px 150px">
+                <form method="POST">
+                <input placeholder="" class=" u-text-3" type="text" name="link" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 94px "><br><br>
+                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+                
+                  <option disabled="">Seleccione el año al que pertenece:</option>
+                  <option style="margin: 0px 0px 0px 15px">1°A</option>
+                  <option>1°B</option>
+                  <option>1°C</option>
+                  <option>2°A</option>
+                  <option>2°B</option>
+                  <option>2°C</option>
+                  <option>3°A</option>
+                  <option>3°B</option>
+                  <option>3°C</option>
+                  <option>4°A</option>
+                  <option>4°B</option>
+                  <option>4°C</option>
+                  <option>5°A</option>
+                  <option>5°B</option>
+                  <option>5°C</option>
+                  <option>6°A</option>
+                  <option>6°B</option>
+                  <option>6°C</option>
+                  <option>7°A</option>
+                  <option>7°B</option>
+                  <option>7°C</option>
+                </select>
+                </div>
                 </h1>
-                <a href="https://nicepage.com/static-site-generator" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">Guardar</a>
+                <input type="submit" name="guardar" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">Guardar
+                    </form>
+                    <?php
+                     include("subirLink.php");
+                    ?>
               </div>
             </div>
           </div>
