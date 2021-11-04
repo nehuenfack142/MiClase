@@ -28,11 +28,11 @@
     </style>
 
     <script type="application/ld+json">
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site1",
-		"logo": "images/logopngfinal1.png",
-		"sameAs": []
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Site1",
+    "logo": "images/logopngfinal1.png",
+    "sameAs": []
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="cursos">
@@ -59,48 +59,15 @@
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
             <div class="u-image u-image-circle u-image-1" alt="" data-image-width="920" data-image-height="800"></div>
             <h6 class="u-text u-text-1">
-              <span class="u-text-white">Matematica</span>&nbsp;
+              
             </h6>
             <h6 class="u-text u-text-2">
-              <font color="#ffffff">Profesora: Mirta Morales</font>
+              <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
             <div class="u-list u-list-1">
-              <div class="u-repeater u-repeater-1">
-                <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-1">
-                  <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
-                    <a href="Profesor.html" data-page-id="575600749" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-1">7° C&nbsp;</a>
-                  </div>
-                </div>
-                <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-2">
-                  <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                    <a href="https://nicepage.com/k/offer-html-templates" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-2"> 6° C</a>
-                  </div>
-                </div>
-                <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-3">
-                  <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
-                    <a href="https://nicepage.com/k/offer-html-templates" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-3"> 4° C<br>
-                    </a>
-                  </div>
-                </div>
-                <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-4">
-                  <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-5">
-                    <a href="https://nicepage.com/k/offer-html-templates" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-4"> 1° A<br>
-                    </a>
-                  </div>
-                </div>
-                <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-5">
-                  <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-6">
-                    <a href="https://nicepage.com/k/offer-html-templates" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-5"> 6° B<br>
-                    </a>
-                  </div>
-                </div>
-                <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-6">
-                  <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-7">
-                    <a href="https://nicepage.com/k/offer-html-templates" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-6"> 2° D<br>
-                    </a>
-                  </div>
-                </div>
-              </div>
+             <?php
+              include("cursosProf.php"); 
+              ?>
             </div>
           </div>
         </div>
