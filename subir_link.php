@@ -44,7 +44,7 @@
                 <h1 class="u-text u-text-body-alt-color u-text-1">Subir</h1>
                 <div style="margin: 20px 10px 10px 150px">
                 <form method="POST">
-                <input placeholder="" class=" u-text-3" type="text" name="link" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 94px "><br><br>
+                <input placeholder="" class=" u-text-3" type="text" name="link" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
                 <select placeholder="Curso:" class=" u-text-3" type="text" name="curso" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
                 
                   <option disabled="">Seleccione el año al que pertenece:</option>
