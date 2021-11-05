@@ -37,7 +37,7 @@
     <section class="u-clearfix u-section-1" id="sec-9027">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-container-style u-grey-25 u-group u-radius-15 u-shape-round u-group-1">
-          <div class="u-container-layout u-container-layout-1">
+          <div class="u-container-layout u-container-layout-1" style="height: 660px">
             <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"></div>
@@ -106,16 +106,17 @@
           </a>
         </div>
       </div></footer>
+     </section>
+ 
+    <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
+}</style>
+    
+    
+    
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+      <a class="u-link" href="politca-y-terminos.html" target="_blank">
+        <span>Terminos y condicines</span>
       </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
     </section>
   </body>
 </html>
