@@ -35,9 +35,7 @@
         <a href="Index.php"class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        <a href="Register.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">Register</a>
-        <a href="login.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-5 u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-2">iniciar sesion</a>
-        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
+        <a href="materias.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">Volver atras</a>
       </div></header>
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-7e7f">
       <div class="u-clearfix u-sheet u-sheet-1" >
