@@ -8,7 +8,7 @@ if (isset($_POST['guardar'])) {
 	    $email = trim($_POST['email']);
 	    $cursos = trim($_POST['cursos']);
 
-	    $consulta = "UPDATE datos SET cursos ='".$cursos."' WHERE email like '".$email."' and tipousuario like 'Alumno'";
+	    $consulta = "UPDATE datos SET cursos ='$cursos' WHERE email like '".$email."' ";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) {
 	    	?> 
