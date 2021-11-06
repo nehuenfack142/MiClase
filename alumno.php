@@ -42,7 +42,7 @@
       </div></header>
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-7e7f">
       <div class="u-clearfix u-sheet u-sheet-1" >
-        <div class="u-container-style u-group u-radius-20 u-shape-round u-white u-group-1" style="background: #5e35b1">
+        <div class="u-container-style u-group u-radius-20 u-shape-round u-white u-group-1" >
           <div class="u-container-layout u-container-layout-1">
             <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
