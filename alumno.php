@@ -118,7 +118,7 @@
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"></div>
                  <?php
-                   include("alumnoo.php");
+                   include("Tareas.php");
                  ?>
                 <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-1"> Fraciones</a>
                 <h3 class="u-text u-text-body-alt-color u-text-default u-text-3">Matematica</h3>
