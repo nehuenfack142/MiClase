@@ -41,7 +41,7 @@
             <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"></div>
-                <h1 class="u-text u-text-body-alt-color u-text-1">Asignar</h1>
+                <h1 class="u-text u-text-body-alt-color u-text-1">Asignar Curso</h1>
                 <form method="POST">
                 <input placeholder="Nombre" class=" u-text-3" type="text" name="name">
                 <input placeholder="ejemplomail@gmail.com" class=" u-text-3" type="email" name="email">
@@ -74,7 +74,7 @@
               </form>
 
                     <?php
-                     include("asignarAl.php");
+                     include("asignarCa.php");
                     ?>
               </div>
             </div>

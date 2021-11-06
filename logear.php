@@ -31,7 +31,7 @@ if (isset($_POST['register']))
 	      }
 
 	      else if($filas == 1 && $tipo == 'Preceptor'){
-	    	   header("Location: http://localhost/Miclase/preceptor.html");
+	    	   header("Location: http://localhost/Miclase/preceptor.php");
 	    	   session_start();
           	$_SESSION['email']=$email;
 	      } 
