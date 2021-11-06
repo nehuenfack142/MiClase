@@ -18,13 +18,7 @@ session_start();
 		}
 	}?>
 	
-			<div class="datos" >
-				<p><?php echo $name; ?></p>
-				<p><?php echo $tipo; ?></p>
-				
-
-			</div>
-
+		
 			
 
 			<style>

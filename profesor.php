@@ -35,9 +35,10 @@
         <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        <a href="Register.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">Register</a>
-        <a href="login.php" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-5 u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-2">iniciar sesion</a>
-        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
+        <?php
+        include("mostrar.php"); 
+        ?>
+        <a href="cursos.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
       </div></header> 
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-d7dd">
       <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
@@ -45,13 +46,10 @@
           <div class="u-container-layout u-container-layout-1">
             <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
             <div class="u-container-style u-custom-color-3 u-group u-radius-20 u-shape-round u-group-2">
-              <div class="u-container-layout u-container-layout-2">
-                <h5 class="u-text u-text-default u-text-1">Matematica</h5>
-              </div>
             </div>
             <div class="u-image u-image-circle u-image-1" alt="" data-image-width="920" data-image-height="800"></div>
             <h6 class="u-text u-text-2">
-              <font color="#ffffff">7° C</font>
+              <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
             <div class="u-list u-list-1">
               <div class="u-repeater u-repeater-1">

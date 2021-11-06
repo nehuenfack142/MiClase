@@ -35,6 +35,9 @@
         <a href="Index.php"class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
+        <?php
+        include("mostrar.php"); 
+        ?>
         <a href="materias.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">Volver atras</a>
       </div></header>
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-7e7f">
@@ -45,10 +48,10 @@
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
             <div class="u-image u-image-circle u-image-1" alt="" data-image-width="920" data-image-height="800"></div>
             <h6 class="u-text u-text-1">
-              <span class="u-text-white">Matematica</span>&nbsp;
+              
             </h6>
             <h6 class="u-text u-text-2">
-              <span class="u-text-white">Profesora: Alguien con nombre de profesora de matematica</span>
+              <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
             <div class="u-list u-list-1" >
               <div class="u-repeater u-repeater-1">

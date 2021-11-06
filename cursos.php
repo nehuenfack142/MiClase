@@ -43,11 +43,10 @@
         <a href="Index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/logopngfinal1.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        <div class="mostrar">
+        
         <?php
         include("mostrar.php"); 
-        ?><br>
-        </div>
+        ?>
         <div class=atras>
         <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a></div>
       </div></header> 
