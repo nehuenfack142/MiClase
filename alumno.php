@@ -110,62 +110,19 @@
           <div class="u-container-layout u-container-layout-1">
             <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
-            <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 0px 50px; ">Tareas&nbsp;</h6>
+            <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Tareas&nbsp;</h6>
             
 
-          <div style="background: #89d0ca ; padding: 20px 50px 20px 50px; margin: 70px 50px 50px 50px; border-radius: 20px; ">
-            <div style="margin: 2% 2% 2% -2%;" class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" >
-              <h2 style="margin: 0px 0px 0px 0px">hola</h2>
-              <h5>link</h5>
-            </div>
-          </div>
+          
 
 
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
-              <div class="u-container-layout u-container-layout-2">
-                <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"></div>
+           
+              
+                
                  <?php
                    include("Tareas.php");
                  ?>
-                <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-1"> Fraciones</a>
-                <h3 class="u-text u-text-body-alt-color u-text-default u-text-3">Matematica</h3>
-              </div>
-            </div>
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-3">
-              <div class="u-container-layout u-container-layout-3">
-                <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-4"></div>
-                <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-2"> Practica Fracciones</a>
-                <h3 class="u-text u-text-body-alt-color u-text-default u-text-4">Matematica</h3>
-              </div>
-            </div>
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-4">
-              <div class="u-container-layout u-container-layout-4">
-                <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-5"></div>
-                <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-3">Angulos</a>
-                <h3 class="u-text u-text-body-alt-color u-text-default u-text-5">Matematica</h3>
-              </div>
-            </div>
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-5">
-              <div class="u-container-layout u-container-layout-5">
-                <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-6"></div>
-                <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-4">Practica Angulos</a>
-                <h3 class="u-text u-text-body-alt-color u-text-default u-text-6">Matematica</h3>
-              </div>
-            </div>
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-6">
-              <div class="u-container-layout u-container-layout-6">
-                <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-7"></div>
-                <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-5"> Numeros Reales</a>
-                <h3 class="u-text u-text-body-alt-color u-text-default u-text-7">Matematica</h3>
-              </div>
-            </div>
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-7">
-              <div class="u-container-layout u-container-layout-7">
-                <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-8"></div>
-                <a href="https://nicepage.com/one-page-template" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-6"> Practica Reales</a>
-                <h3 class="u-text u-text-body-alt-color u-text-default u-text-8">Matematica</h3>
-              </div>
-            </div>
+                
           </div>
         </div>
       </div>

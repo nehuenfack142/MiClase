@@ -28,27 +28,22 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' and materias ='".$materias."' ");
 				$i=0;
 				while ($row = $tabla -> fetch_array()){ ?>
-				<div class=datos2>
-							<a >Tarea:<?php echo $row['id'];?></a>
-							<a href="<?php echo $row['link'];?>"><?php echo $row['link'];?></a><br>
-						
-					
+				<div class="datos1">
+				<div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" style="margin: 2% 2% 2% -2%;">
+							<h2 >Tarea:<?php echo $row['id'];?></h2>
+							<h5><a href="<?php echo $row['link'];?>"><?php echo $row['link'];?></a></h5><br>
+				</div>
 			 </div>
 			<?php } ?>
 		
 
 			<style>
-				.datos2{
-				min-height: 300px;
-				max-height: 400px;
-				width: 300px;
-    			background: #89d0ca;
-    			color: #5e35b1;
-    			border-radius: 20px;
-    			font-size: 48px;
-    			float: center;
-    			padding: 150px 110px 120px 130px;
-    			font-family: Oswald;
+				.datos1{
+					background: #89d0ca;
+					padding: 20px 50px 20px 50px; 
+					margin: 50px 50px 50px 50px; 
+					border-radius: 20px;
 				}
+				
 
 			</style>
