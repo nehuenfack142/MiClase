@@ -29,7 +29,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class=datos2>
 					
-							<td><?php echo $row['materias'];?></td><br>
+							<a href="alumno.php"><?php echo $row['materias'];?></a><br>
 						
 					
 			 </div>

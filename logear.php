@@ -25,13 +25,13 @@ if (isset($_POST['register']))
 	    	}
 
 	    	else if($filas == 1 && $tipo == 'Alumno'){
-	    	   header("Location: http://localhost/Miclase/alumno.php");
+	    	   header("Location: http://localhost/Miclase/materias.php");
 	    	   session_start();
           	$_SESSION['email']=$email;
 	      }
 
 	      else if($filas == 1 && $tipo == 'Preceptor'){
-	    	   header("Location: http://localhost/Miclase/Preceptor.php");
+	    	   header("Location: http://localhost/Miclase/preceptor.html");
 	    	   session_start();
           	$_SESSION['email']=$email;
 	      } 
