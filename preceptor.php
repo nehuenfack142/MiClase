@@ -32,7 +32,9 @@
         <a href="index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        
+        <?php
+        include("mostrar.php"); 
+        ?>
         <a href="index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-9027">
@@ -41,7 +43,8 @@
           <div class="u-container-layout u-valign-top u-container-layout-1">
             <div class="u-container-style u-custom-color-3 u-group u-radius-15 u-shape-round u-group-2">
               <div class="u-container-layout u-container-layout-2">
-                <h1 class="u-text u-text-1">Preceptor</h1><span class="u-icon u-icon-circle u-text-custom-color-5 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 60 60" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-87ac"></use></svg><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" id="svg-87ac" style="enable-background:new 0 0 60 60;"><g><path d="M38.914,0H6.5v60h47V14.586L38.914,0z M39.5,3.414L50.086,14H39.5V3.414z M8.5,58V2h29v14h14v42H8.5z"></path><path d="M42.5,21h-16c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S43.052,21,42.5,21z"></path><path d="M22.875,18.219l-4.301,3.441l-1.367-1.367c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2,2
+                <h1 class="u-text u-text-1">
+              <font color="#ffffff"><?php echo "$tipo";?><a >: </a><?php echo "$name";?></font></h1><span class="u-icon u-icon-circle u-text-custom-color-5 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 60 60" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-87ac"></use></svg><svg class="u-svg-content" viewBox="0 0 60 60" x="0px" y="0px" id="svg-87ac" style="enable-background:new 0 0 60 60;"><g><path d="M38.914,0H6.5v60h47V14.586L38.914,0z M39.5,3.414L50.086,14H39.5V3.414z M8.5,58V2h29v14h14v42H8.5z"></path><path d="M42.5,21h-16c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S43.052,21,42.5,21z"></path><path d="M22.875,18.219l-4.301,3.441l-1.367-1.367c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2,2
 		C17.987,23.901,18.243,24,18.5,24c0.22,0,0.441-0.072,0.624-0.219l5-4c0.432-0.346,0.501-0.975,0.156-1.406
 		C23.936,17.943,23.306,17.874,22.875,18.219z"></path><path d="M42.5,32h-16c-0.552,0-1,0.447-1,1s0.448,1,1,1h16c0.552,0,1-0.447,1-1S43.052,32,42.5,32z"></path><path d="M22.875,29.219l-4.301,3.441l-1.367-1.367c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l2,2
 		C17.987,34.901,18.243,35,18.5,35c0.22,0,0.441-0.072,0.624-0.219l5-4c0.432-0.346,0.501-0.975,0.156-1.406
