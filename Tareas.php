@@ -8,6 +8,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 
 	if ($resultado) {
 	  		while ($row = $resultado -> fetch_array()){
+			$materias = $row['materias'];
 			$cursos = $row['cursos'];
 			$id = $row['id'];
 			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' and id = '".$id."' ");
@@ -24,7 +25,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 			
 
 			<?php 
-				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."'");
+				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' and materias ='".$materias."' ");
 
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class=datos2>
