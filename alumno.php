@@ -114,12 +114,13 @@
             
 
           <div style="background: #89d0ca ; padding: 20px 50px 20px 50px; margin: 70px 50px 50px 50px; border-radius: 20px; ">
-            <h1>holasdasdasdasdasdsaasdasdasdasdasdasdasd asd asdasd as das dasdas asds sd as </h1>
-
-            
+            <div style="margin: 2% 2% 2% -2%;" class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" >
+              <h2 style="margin: 0px 0px 0px 0px">hola</h2>
+              <h5>link</h5>
+            </div>
           </div>
 
-            
+
             <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"></div>

@@ -29,12 +29,11 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body"><header class="u-clearfix u-custom-color-3 u-header" id="sec-ee9f" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
+        <a href="index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
-        <a href="308929996" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">Register</a>
-        <a href="206163820" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-5 u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-2">iniciar sesion</a>
-        <a href="Inicio.html" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
+        
+        <a href="index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-9027">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
