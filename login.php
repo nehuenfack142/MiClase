@@ -51,9 +51,9 @@
         <img class="u-image u-image-default u-image-1" src="images/programacion-para-nios-unir-3.jpg" alt="" data-image-width="661" data-image-height="382">
         <div class="u-form u-form-1">
           <form method="post">
-                <input type="email" name="email" placeholder="Email"><br>
-                <input type="password" name="contraseña" placeholder="Contraseña"><br>
-                <input type="submit" name="register"><br>
+                <input type="email" name="email" placeholder="Email" style="width: 300px;  margin: 10px"><br>
+                <input type="password" name="contraseña" placeholder="Contraseña" style="width: 300px;  margin: 10px"><br>
+                <input type="submit" name="register" style="margin: 0px 0px 0px 100px; padding: 0px 0px 0px 0px; width: 100px; height: 50px; background: #5e35b1; color: #fff" ><br>
           </form>
              <?php
               include("logear.php");
