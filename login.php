@@ -60,7 +60,7 @@
              ?>        
         </div>
               
-        <h1 class="u-text u-text-custom-color-3 u-text-default u-text-1">Iniciar sesion</h1>
+        <h1 class="u-text u-text-custom-color-3 u-text-default u-text-1" style="margin: -250px 0px 0px 700px;">Iniciar sesion</h1>
       </div>
     </section>
     
