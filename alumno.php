@@ -110,9 +110,15 @@
           <div class="u-container-layout u-container-layout-1">
             <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
-            <h6 class="u-text u-text-1" >
-              Tareas&nbsp;
-            </h6>
+            <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 0px 50px; ">Tareas&nbsp;</h6>
+            
+
+          <div style="background: #89d0ca ; padding: 20px 50px 20px 50px; margin: 70px 50px 50px 50px; border-radius: 20px; ">
+            <h1>holasdasdasdasdasdsaasdasdasdasdasdasdasd asd asdasd as das dasdas asds sd as </h1>
+
+            
+          </div>
+
             
             <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
               <div class="u-container-layout u-container-layout-2">
