@@ -5,7 +5,6 @@ session_start();
 $seccion=$_SESSION['email'];}
 {
 $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
-//id ='".$ida."' and tipousuario ='".$tipousuario."'and contraseña ='".$contra."'and fecha_reg ='".$fecha."'and cursos ='".$cursoso."'and materias ='".$materias."' 
 
 	if ($resultado) {
 	  		while ($row = $resultado -> fetch_array()){
@@ -33,11 +32,14 @@ if (isset($_POST['guardar'])) {
 							$fecha=$row['fecha_reg'];
 							$cursoso=$row['cursos'];
 							}
-	    if (!empty($cursoso)) {
-	    	$consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','')";
-	    }else  if (empty($cursoso)){
+	    if (!empty($cursoso)&& $tipousuario == 'Alumno') {
 	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE email like '".$mail."' ";
-	    }
+	    }else  if (empty($cursoso && $tipousuario == 'Alumno')){
+	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE cursos = '' and email like '".$mail."' ";
+	    }else if (!empty($cursoso)&& $tipousuario == 'Profesor') {
+	    	$consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','')";
+	    }else if (empty($cursoso && $tipousuario == 'Profesor')){
+	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE cursos = '' and email like '".$mail."' ";
 	    
 	    
 	    $resultadoo = mysqli_query($conex,$consulta);
@@ -55,6 +57,6 @@ if (isset($_POST['guardar'])) {
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
            <?php
     }
-}
+}}
 
 ?>
