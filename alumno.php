@@ -78,7 +78,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
             <div class="u-list u-list-1" >
               <div class="datos2" style="margin: 0px 0px 50px 0px; ">
           
-              <form  action="tutorialesA.php" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+              <form  action="tutorialesA.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
                       </form>
        </div>

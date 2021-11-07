@@ -65,10 +65,20 @@
                 <a href="" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-3">Tomar faltas<br>
                 </a>
               </div>
+
             </div>
+                <div class="datos2" style="margin: 60px -145px 500px 15px; ">
+                          
+                              <form  action="tutorialesPe.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+                                      <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
+                                      </form>
+                       </div>
           </div>
+
         </div>
+
       </div>
+
     </section>
     
     
