@@ -34,9 +34,12 @@ if (isset($_POST['guardar'])) {
               $fecha=$row['fecha_reg'];
               $cursoso=$row['cursos'];
               $materiaa=$row['materias'];
+              if ($materia == $materiaa) {
+                  $error=1;
+              }else $error=0;
               }
 
-        if (empty($tipousuario)) {
+        if (empty($tipousuario) || $error == 1) {
             ?> 
         <h3 class="bad">¡Ingrese antes un tipo de Usuario!</h3>
            <?php
@@ -60,7 +63,7 @@ if (isset($_POST['guardar'])) {
       
       if ($resultado) {
         ?> 
-        <?php echo $consulta;?>
+        
            <?php
       } else {
         ?> 
