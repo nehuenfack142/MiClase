@@ -48,7 +48,7 @@
             <div class="u-container-style u-custom-color-3 u-group u-radius-20 u-shape-round u-group-2">
             </div>
             <div class="u-image u-image-circle u-image-1" alt="" data-image-width="920" data-image-height="800"></div>
-            <h6 class="u-text u-text-2">
+            <h6 class="u-text u-text-1 " style="margin: -80px 0px 0px 150px;">
               <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
             <div class="u-list u-list-1" style="margin: 30px 0px -20px 50px">
