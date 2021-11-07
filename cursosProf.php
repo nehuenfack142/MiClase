@@ -23,7 +23,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 
 			
 
-			<?php 
+		<!--	<?php 
 				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
 				while ($row = $tabla -> fetch_array()){ ?>
@@ -50,8 +50,48 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
     			font-family: Oswald;
 				}
 
-			</style>
+			</style>-->
+ <?php 
+				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
+				while ($row = $tabla -> fetch_array()){ ?>
+				<div class="datos2" style="margin: 0px 0px 50px 0px; ">
+					
+							<form  action="alumno.php" method="get"  class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+			                <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent;" type="submit" name="enviar" value="<?php echo $row['cursos'];?>"><br>
+			              	</form>
+							
+					
+			 </div>
+			<?php } ?>
+		
+
+			<style>
+				.datos2{
+				
+				min-height: 100px;
+				max-height: 400px;
+    			background:  #5e35b1;
+    			color: #89d0ca;
+    			border-radius: 20px;
+    			font-size: 48px;
+    		    padding: 0px 0px 0px 0px;
+    			font-family: Oswald;
+				}
+				.datos3{
+				
+				min-height: 100px;
+				max-height: 400px;
+    			background: transparent; 
+    			color: #89d0ca;
+    			border-radius: 20px;
+    			font-size: 48px;
+    		    padding: 24px 900px 24px 50px;
+    			font-family: Oswald;
+				}
+				
+
+			</style>
 
 
 
