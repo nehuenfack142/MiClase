@@ -27,10 +27,10 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
 				while ($row = $tabla -> fetch_array()){ ?>
-				<div style="margin: 0px 0px 150px 0px; ">
+				<div class="datos2" style="margin: 0px 0px 50px 0px; ">
 					
 					
-							<a class="datos2" href="alumno.php"><?php echo $row['materias'];?></a><br>
+							<a class="datos3" href="alumno.php" style="min-height: 300px; max-height: 400px;"><?php echo $row['materias'];?></a><br>
 				
 					
 			 </div>
@@ -40,15 +40,24 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 			<style>
 				.datos2{
 				
-				min-height: 300px;
+				min-height: 100px;
 				max-height: 400px;
     			background:  #5e35b1;
     			color: #89d0ca;
     			border-radius: 20px;
     			font-size: 48px;
-    			float: center;
-    			padding: 50px 800px 50px 20px;
-    			margin: 0px 0px 0px 0px;
+    		    padding: 24px 0px 24px 0px;
+    			font-family: Oswald;
+				}
+				.datos3{
+				
+				min-height: 100px;
+				max-height: 400px;
+    			background:  ;
+    			color: #89d0ca;
+    			border-radius: 20px;
+    			font-size: 48px;
+    		    padding: 24px 900px 24px 50px;
     			font-family: Oswald;
 				}
 				
