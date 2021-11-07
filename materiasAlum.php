@@ -10,7 +10,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 	  		while ($row = $resultado -> fetch_array()){
 			$cursos = $row['cursos'];
 			$id = $row['id'];
-			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' and id = '".$id."' ");
+			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' ");
 			$filas= mysqli_num_rows($cons);
 			
 
@@ -20,17 +20,40 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 }
 ?>
 
-
+	
 			
+			
+			<?php
+			$consa=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'");
+			$filass= mysqli_num_rows($consa); 
+			$i=0;
+				$prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'");
+				while ($row = $prof -> fetch_array()){
+					$nom[$i] = $row['nombre'];
+					$mat[$i] = $row['materias'];
+					$i++;
+					}
+				$i=0;
+				$alum = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Alumno' and cursos='".$cursos."'");
+				while ($row = $alum -> fetch_array()){
+					$mate[$i] = $row['materias'];
+					$i++;
+					}
+				$J=0;
+				for ($R=0; $R < $filass; $R++){
+				for ($i=0; $i < $filas; $i++){ 
+					if ($mat[$R] == $mate[$i]) {
+					$A[$J] =$mate[$i];
+					$B[$J]= $nom[$R];
+					$J++;}}}
 
-			<?php 
 				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
-				while ($row = $tabla -> fetch_array()){ ?>
+				for($i=0;$i<$filas;$i++){ ?>
 				<div class="datos2" style="margin: 0px 0px 50px 0px; ">
 					
 							<form  action="alumno.php" method="get"  class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
-			                <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent;" type="submit" name="enviar" value="<?php echo $row['materias'];?>"><br>
+			                <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent;" type="submit" name="enviar" value="<?php echo $A[$i];?>"><?php echo $B[$i];?><br>
 			              	</form>
 							
 					
