@@ -32,9 +32,9 @@ if (isset($_POST['guardar'])) {
 							$contra=$row['contraseña'];
 							$fecha=$row['fecha_reg'];
 							$cursoso=$row['cursos'];
-							$materias=$row['materias'];}
+							}
 	    if (!empty($cursoso)) {
-	    	$consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','".$materias."')";
+	    	$consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','')";
 	    }else  if (empty($cursoso)){
 	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE email like '".$mail."' ";
 	    }
