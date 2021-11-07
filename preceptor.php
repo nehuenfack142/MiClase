@@ -60,8 +60,8 @@
 		l3-8.225l0,0l3-8.225v0.003l1.932-5.301L12,29.938l0,0l0.16-0.439l0.026-0.082C12.252,29.172,12.477,29,12.731,29H48h2h4h3.49
 		c0.379,0,0.477,0.546,0.501,0.819L47.868,57.584z"></path><path d="M18,17h24c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,17,18,17z"></path><path d="M18,10h10c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,10,18,10z"></path><path d="M18,24h24c0.552,0,1-0.447,1-1s-0.448-1-1-1H18c-0.552,0-1,0.447-1,1S17.448,24,18,24z"></path>
 </g></svg></span>
-                <a href="asignarD.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-1">Asignar Materias</a>
-                <a href="asignarC.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-2">Asignar Años</a>
+                <a href="asignarD.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-1">Asignar</a>
+                <a href="asignarC.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-2">Roles</a>
                 <a href="" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-3">Tomar faltas<br>
                 </a>
               </div>

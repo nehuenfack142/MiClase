@@ -23,7 +23,7 @@ if (isset($_POST['guardar'])) {
     if (strlen($_POST['name']) >= 1) {
 	    $name = trim($_POST['name']);
 	    $mail = trim($_POST['mail']);
-	    $curso = trim($_POST['curso']);
+	    $rol = trim($_POST['rol']);
 		$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$mail."' and nombre ='".$name."' ");
 				while ($row = $tabla -> fetch_array()){ 
 							$ida = $row['id'];
@@ -32,16 +32,7 @@ if (isset($_POST['guardar'])) {
 							$fecha=$row['fecha_reg'];
 							$cursoso=$row['cursos'];
 							}
-	    if (!empty($cursoso)&& $tipousuario == 'Alumno') {
-	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE email like '".$mail."' ";
-	    }else  if (empty($cursoso && $tipousuario == 'Alumno')){
-	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE cursos = '' and email like '".$mail."' ";
-	    }else if (!empty($cursoso)&& $tipousuario == 'Profesor') {
-	    	$consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','')";
-	    }else if (empty($cursoso && $tipousuario == 'Profesor')){
-	    	$consulta = "UPDATE datos SET cursos ='$curso' WHERE cursos = '' and email like '".$mail."' ";
-	    
-	    
+	   	$consulta = "UPDATE datos SET tipousuario ='$rol' WHERE email like '".$mail."' ";
 	    $resultadoo = mysqli_query($conex,$consulta);
 	    if ($resultadoo) {
 	    	?> 
@@ -57,6 +48,6 @@ if (isset($_POST['guardar'])) {
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
            <?php
     }
-}}
+}
 
 ?>

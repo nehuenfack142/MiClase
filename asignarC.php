@@ -44,33 +44,16 @@
             <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1" style=" padding: -500px 0px 0px 0px "></div>
-                <h1 class="u-text u-text-body-alt-color u-text-1 " >Asignar Curso</h1>
+                <h1 class="u-text u-text-body-alt-color u-text-1 " >Asignar Rol</h1>
                 <form method="POST">
                 <input placeholder="Nombre" class=" u-text-3" type="text" name="name">
                 <input placeholder="ejemplomail@gmail.com" class=" u-text-3" type="email" name="mail">
-                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso">
-                  <option disabled="">Seleccione el año al que pertenece:</option>
-                  <option>1°A</option>
-                  <option>1°B</option>
-                  <option>1°C</option>
-                  <option>2°A</option>
-                  <option>2°B</option>
-                  <option>2°C</option>
-                  <option>3°A</option>
-                  <option>3°B</option>
-                  <option>3°C</option>
-                  <option>4°A</option>
-                  <option>4°B</option>
-                  <option>4°C</option>
-                  <option>5°A</option>
-                  <option>5°B</option>
-                  <option>5°C</option>
-                  <option>6°A</option>
-                  <option>6°B</option>
-                  <option>6°C</option>
-                  <option>7°A</option>
-                  <option>7°B</option>
-                  <option>7°C</option>
+                <select placeholder="Rol:" class=" u-text-3" type="text" name="rol">
+                  <option disabled="">Seleccione el rol adecuado:</option>
+                  <option>Alumno</option>
+                  <option>Profesor</option>
+                  <option>Preceptor</option>
+                  
                 </select>
                
                 <input type="submit" name="guardar" href="https://nicepage.com/static-site-generator" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-3  u-radius-10 u-text-custom-color-5 u-text-hover-custom-color-3 u-btn-1" style="margin: 50px 0px 0px 500px;"> 
