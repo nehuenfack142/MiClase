@@ -51,7 +51,7 @@
             <h6 class="u-text u-text-2">
               <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
-            <div class="u-list u-list-1">
+            <div class="u-list u-list-1" style="margin: 30px 0px -20px 50px">
               <div class="datos2" style="margin: 0px 0px 50px 0px; ">
           
               <form  action="tutorialesP.php" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
@@ -81,8 +81,8 @@
 </g>
 </g><g><g><path d="M448,128c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16c17.664,0,32,14.368,32,32v270.688l-54.016-43.2    c-2.816-2.24-6.368-3.488-9.984-3.488H192c-17.664,0-32-14.368-32-32v-16c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16v16    c0,35.296,28.704,64,64,64h218.368l75.616,60.512C488.896,510.816,492.448,512,496,512c2.336,0,4.704-0.512,6.944-1.568    C508.48,507.744,512,502.144,512,496V192C512,156.704,483.296,128,448,128z"></path>
 </g>
-</g></svg></span>
-                    <a href="javascript:abrir()"  class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-3">Chat<br>
+</g></svg></span>     
+                    <a href="javascript:abrir()"  class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-3 ">Chat<br>
                     </a>
                   </div>
 
@@ -99,7 +99,8 @@
 
               </div>
               <div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
-                        <form method="POST" style="width: 700px; margin: auto; background-color: #89d0ca; margin-top: 100px;">
+                <div style="margin: 50px 0px 0px 0px; padding: 10px 10px 10px 10px; background-color: #5e35b1; border-radius: 20px; width: 730px  ">
+                        <form method="POST" style="width: 700px; background-color: #89d0ca; margin: 0px 0px 0px 0px;  border-radius: 20px;">
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
                             <option value="josueluna650@gmail.com">Profe1</option>
                             <option value="01josueluna@gmail.com">Profe2</option>
@@ -109,17 +110,18 @@
 
                           <input type="text" placeholder ="Asunto" name="asunto" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
                           <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;"></textarea>
-                          <input type="submit" name="enviar" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
+                          <input type="submit" name="enviar" style="margin: 0px 0px 0px 500px; padding: 10px 20px 10px 20px;  background-color: #5e35b1; border-radius: 20px; color: white">
                           <a href="javascript:cerrar()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                         </form>
+                        </div>
                            </div>
                            <div class="calendar1" id="calendar1" style="display: none; position: absolute center;">
     <section class="u-clearfix u-section-1" id="sec-9027">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-container-style u-group u-radius-15 u-shape-round u-group-1">
           <div class="u-container-layout u-container-layout-1" style="height: 780px; ">
-            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2">
-              <div class="u-container-layout u-container-layout-2" style="height: 430px">
+            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2" style="margin: 50px 0px 0px 0px; width: 900px">
+              <div class="u-container-layout u-container-layout-2" style="height: 430px; ">
                 <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"  style="margin-top: 0px; height: 400px "></div>
                 <h1 class="u-text u-text-body-alt-color u-text-1" style="margin-top: -320px; ">Subir</h1>
                 <div style="margin: 20px 10px 10px 150px">
