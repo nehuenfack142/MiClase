@@ -26,7 +26,6 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 
 			<?php 
 				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' and materias ='".$materias."' ");
-				$i=0;
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class="datos1">
 				<div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" style="margin: 2% 2% 2% -2%;">
