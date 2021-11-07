@@ -24,7 +24,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 			
 
 			<?php 
-				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' and id = '".$id."'");
+				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class=datos2>
