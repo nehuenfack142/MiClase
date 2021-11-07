@@ -5,15 +5,15 @@ session_start();
 $seccion=$_SESSION['email'];}
 {
 $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
-
+$i=0;
 	if ($resultado) {
 	  		while ($row = $resultado -> fetch_array()){
-			$materias = $row['materias'];
+			$array[$i]=$materias = $row['materias'];
 			$cursos = $row['cursos'];
 			$id = $row['id'];
-			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' and id = '".$id."' ");
+			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' ");
 			$filas= mysqli_num_rows($cons);
-			
+			$i++;
 
 		}
 	}
@@ -25,7 +25,23 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 			
 
 			<?php 
-				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' and materias ='".$materias."' ");
+				$consa=$conex->query("SELECT id FROM link ");
+				$filass= mysqli_num_rows($consa);
+				
+					$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' ");
+					$i=0;
+					while ($row = $tabla -> fetch_array()){
+					$arrey[$i]= $ca= $row['materias'];
+					$i++;
+					}
+					for ($e=0;$e<$filas;$e++) {
+					for ($i=0; $i < $filass ; $i++) { 
+						if ($array[$e]==$arrey[$i]) {
+							$var= $array[$e];
+							$i=$filass;	
+						}
+					}}	
+				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' and materias ='".$var."' ");
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class="datos1">
 				<div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" style="margin: 2% 2% 2% -2%;">

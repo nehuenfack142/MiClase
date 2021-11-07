@@ -18,7 +18,7 @@ if (isset($_POST['register']))
 	  	if ($resultado) {
 	  		while ($row = $resultado->fetch_array()){
 	  		$tipo = $row['tipousuario'];
-	    	if($filas == 1 && $tipo == 'Profesor'){
+	    	if($tipo == 'Profesor'){
 	    	   header("Location: http://localhost/Miclase/cursos.php");
 	    	   session_start();
           	$_SESSION['email']=$email;
