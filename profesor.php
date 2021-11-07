@@ -53,10 +53,11 @@
             </h6>
             <div class="u-list u-list-1" style="margin: 30px 0px -20px 50px">
               <div class="datos2" style="margin: 0px 0px 50px 0px; ">
-          
-              <form  action="tutorialesP.php" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
-                      <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
+          <div style="">
+              <form  action="tutorialesP.php" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3 " style="font-style: Oswald" >
+                      <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font-style: Oswald;" type="submit" value="Tutoriales"><br>
                       </form>
+                      </div>
        </div>
               <div class="u-repeater u-repeater-1">
                 <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-1">
