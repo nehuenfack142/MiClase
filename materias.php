@@ -55,7 +55,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-group u-radius-20 u-shape-round u-white u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1" ></div>
+            <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1" style="width: 800px" ></div>
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2" ></div>
             <div class="u-image u-image-circle u-image-1" alt="" data-image-width="920" data-image-height="800" ></div>
             <h6 class="u-text u-text-1"  >
@@ -65,7 +65,7 @@
               <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
 
-            <div style="margin: 0px 0px 180px 0px"></div>
+            <div style="margin: 0px 0px 120px 0px ; "></div>
 
             <div class="u-list u-list-1" >
              <?php
