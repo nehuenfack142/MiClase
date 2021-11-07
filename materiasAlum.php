@@ -29,8 +29,8 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class="datos2" style="margin: 0px 0px 50px 0px; ">
 					
-							<form  action="alumno.php" method="get">
-			                <input type="submit" name="enviar" value="<?php echo $row['materias'];?>"><br>
+							<form  action="alumno.php" method="get"  >
+			                <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent;" type="submit" name="enviar" value="<?php echo $row['materias'];?>"><br>
 			              	</form>
 							
 					
@@ -47,14 +47,14 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
     			color: #89d0ca;
     			border-radius: 20px;
     			font-size: 48px;
-    		    padding: 24px 0px 24px 0px;
+    		    padding: 0px 0px 0px 0px;
     			font-family: Oswald;
 				}
 				.datos3{
 				
 				min-height: 100px;
 				max-height: 400px;
-    			background:  ;
+    			background: transparent; 
     			color: #89d0ca;
     			border-radius: 20px;
     			font-size: 48px;
