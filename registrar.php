@@ -10,6 +10,12 @@ if (isset($_POST['register'])) {
 	    $contraseña = trim($_POST['contraseña']);
 	    $consulta = "INSERT INTO datos(nombre, email, fecha_reg, contraseña) VALUES ('$name','$email','$fechareg', '$contraseña')";
 	    $resultado = mysqli_query($conex,$consulta);
+	    $cons = mysqli_query($conex,"SELECT id FROM datos ");
+	    $filas= mysqli_num_rows($cons);
+		if ($filas == 1) {
+	    $consulto = mysqli_query($conex,"UPDATE datos SET tipousuario ='Preceptor'");
+	    }
+		
 	    if ($resultado) {
 	    	?> 
 	    	<h3 class="ok" style="margin: 0px 0px 0px 100px;">¡Te has inscripto correctamente!</h3>
