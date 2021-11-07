@@ -29,9 +29,10 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class="datos2" style="margin: 0px 0px 50px 0px; ">
 					
-					
-							<a class="datos3" href="alumno.php" style="min-height: 300px; max-height: 400px;"><?php echo $row['materias'];?></a><br>
-				
+							<form  action="alumno.php" method="get">
+			                <input type="submit" name="enviar" value="<?php echo $row['materias'];?>"><br>
+			              	</form>
+							
 					
 			 </div>
 			<?php } ?>

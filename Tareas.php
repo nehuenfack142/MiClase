@@ -1,4 +1,7 @@
 <?php
+if (isset($_GET['enviar'])) {
+	$m = $_GET['enviar'];
+}
 $inc = include("con_db.php");
 if(!isset($_SESSION)){
 session_start();
@@ -34,13 +37,15 @@ $i=0;
 					$arrey[$i]= $ca= $row['materias'];
 					$i++;
 					}
-					for ($e=0;$e<$filas;$e++) {
 					for ($i=0; $i < $filass ; $i++) { 
-						if ($array[$e]==$arrey[$i]) {
-							$var= $array[$e];
+						if ($m==$arrey[$i]) {
+							$var= $m;
 							$i=$filass;	
 						}
-					}}	
+					}
+					if (empty($var)) {
+						$var='';
+					}
 				$tabla = mysqli_query($conex,"SELECT * FROM link where curso ='".$cursos."' and materias ='".$var."' ");
 				while ($row = $tabla -> fetch_array()){ ?>
 				<div class="datos1">
