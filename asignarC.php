@@ -32,6 +32,9 @@
         <a href="index.php" class="u-image u-logo u-image-1" data-image-width="2150" data-image-height="1280">
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
+        <?php
+                     include("mostrar.php");
+                    ?>
         <a href="preceptor.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1">volver atras</a>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-9027">
@@ -44,8 +47,8 @@
                 <h1 class="u-text u-text-body-alt-color u-text-1">Asignar Curso</h1>
                 <form method="POST">
                 <input placeholder="Nombre" class=" u-text-3" type="text" name="name">
-                <input placeholder="ejemplomail@gmail.com" class=" u-text-3" type="email" name="email">
-                <select placeholder="Curso:" class=" u-text-3" type="text" name="cursos">
+                <input placeholder="ejemplomail@gmail.com" class=" u-text-3" type="email" name="mail">
+                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso">
                   <option disabled="">Seleccione el año al que pertenece:</option>
                   <option>1°A</option>
                   <option>1°B</option>
@@ -73,11 +76,12 @@
                 <input type="submit" name="guardar" href="https://nicepage.com/static-site-generator" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1"> 
               </form>
 
-                    <?php
-                     include("asignarCa.php");
-                    ?>
+                    
               </div>
             </div>
+            <?php
+                     include("asignarCa.php");
+                    ?>
           </div>
         </div>
       </div>
