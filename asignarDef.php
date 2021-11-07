@@ -34,7 +34,7 @@ if (isset($_POST['guardar'])) {
               $fecha=$row['fecha_reg'];
               $cursoso=$row['cursos'];
               $materiaa=$row['materias'];
-              if ($materia == $materiaa) {
+              if ($materia == $materiaa && $tipousuario =="Alumno") {
                   $error=1;
               }else $error=0;
               }
