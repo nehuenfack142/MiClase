@@ -38,6 +38,28 @@
         <?php
         include("mostrar.php"); 
         ?>
+        <?php
+$inc = include("con_db.php");
+if(!isset($_SESSION)){
+session_start();
+$seccion=$_SESSION['email'];}
+{
+$resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
+
+  if ($resultado) {
+        while ($row = $resultado -> fetch_array()){
+          $materia= $row['materias'];
+          $cursos = $row['cursos'];
+          $id = $row['id'];
+          $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."' ");
+          $filas= mysqli_num_rows($cons);
+      
+
+    }
+  }
+
+}
+?>
         <a href="materias.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">Volver atras</a>
       </div></header>
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-7e7f">
@@ -90,10 +112,35 @@
                   </div>
                 </div>
               </div>
-              <div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
+              
+                 <?php
+                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."'");
+                  $i=0;
+                  while ($row = $prof -> fetch_array()){
+                          $nom[$i] = $row['nombre'];
+                          $ema[$i] = $row['email'];
+                          $i++;
+                          }
+                          ?>
+
+        <div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
                         <form method="POST" style="width: 700px; margin: auto; background-color: #89d0ca; margin-top: 100px;">
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                            <option value="josueluna650@gmail.com">Profe1</option>
+                          <?php for($i=0;$i<$filas;$i++){ ?>
+                            <option value="<?php echo "$ema[$i]";?>"><?php echo "$nom[$i]";?></option>
+                            <?php } ?>
+                          </select>
+
+                          <input type="text" placeholder ="Asunto" name="asunto" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
+                          <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;"></textarea>
+                          <input type="submit" name="enviar" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
+                          <a href="javascript:cerrar()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
+                        </form>
+                           </div>
+              <!--<div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
+                        <form method="POST" style="width: 700px; margin: auto; background-color: #89d0ca; margin-top: 100px;">
+                          <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
+                            <option value="">Profe1</option>
                             <option value="01josueluna@gmail.com">Profe2</option>
                             <option value="01lunajosue@gmail.com">Profe3</option>
                             <option value="triaccanehuen.nt56@gmail.com">Profe4</option>
@@ -104,7 +151,7 @@
                           <input type="submit" name="enviar" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
                           <a href="javascript:cerrar()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                         </form>
-                           </div>
+                           </div>-->
             </div>
           </div>
         </div>
