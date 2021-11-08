@@ -204,6 +204,7 @@ $i=0;
                           <div style="margin: 20px 10px 10px 150px">
                           <form method="POST">
                           <input placeholder="Link:" class=" u-text-3" type="text" name="link2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                          <input placeholder="Nombre:" class=" u-text-3" type="text" name="nombre2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
                           <input placeholder="Materia:" class=" u-text-3" type="text" name="materia2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
                           <select placeholder="Curso:" class=" u-text-3" type="text" name="curso2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
 
