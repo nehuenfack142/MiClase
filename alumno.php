@@ -39,24 +39,27 @@
         include("mostrar.php"); 
         ?>
         <?php
+        if (isset($_GET['enviar'])) {
+  $h = $_GET['enviar'];
+}
 $inc = include("con_db.php");
 if(!isset($_SESSION)){
 session_start();
 $seccion=$_SESSION['email'];}
 {
 $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
-
+$i=0;
   if ($resultado) {
         while ($row = $resultado -> fetch_array()){
           $materia= $row['materias'];
           $cursos = $row['cursos'];
           $id = $row['id'];
-          $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."' ");
-          $filas= mysqli_num_rows($cons);
-      
+          $i++; 
 
     }
   }
+  $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and materias='".$h."' and cursos='".$cursos."' ");
+          $filas= mysqli_num_rows($cons);
 
 }
 ?>
@@ -114,7 +117,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
               </div>
               
                  <?php
-                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."'");
+                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$h."'");
                   $i=0;
                   while ($row = $prof -> fetch_array()){
                           $nom[$i] = $row['nombre'];
