@@ -141,21 +141,7 @@ $i=0;
                           <a href="javascript:cerrar()" style="margin: -200px 0px 0px 650px; color: red; ">X</a>
                         </form>
                            </div>
-              <!--<div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
-                        <form method="POST" style="width: 700px; margin: auto; background-color: #89d0ca; margin-top: 100px;">
-                          <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                            <option value="">Profe1</option>
-                            <option value="01josueluna@gmail.com">Profe2</option>
-                            <option value="01lunajosue@gmail.com">Profe3</option>
-                            <option value="triaccanehuen.nt56@gmail.com">Profe4</option>
-                          </select>
-
-                          <input type="text" placeholder ="Asunto" name="asunto" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                          <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;"></textarea>
-                          <input type="submit" name="enviar" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                          <a href="javascript:cerrar()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
-                        </form>
-                           </div>-->
+ 
             </div>
           </div>
         </div>
@@ -168,18 +154,26 @@ $i=0;
             <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
             <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Tareas&nbsp;</h6>
-            
-
-          
-
-
-           
-              
-                
                  <?php
                    include("Tareas.php");
-                 ?>
-                
+                 ?>   
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="u-clearfix u-grey-15 u-section-2" id="sec-100c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-expanded-width u-group u-radius-20 u-shape-round u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
+            <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
+            <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Evaluaciones&nbsp;</h6>
+                 <?php
+                   include("verEval.php");
+                 ?>   
           </div>
         </div>
       </div>
