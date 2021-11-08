@@ -20,11 +20,11 @@
     
     
     <script type="application/ld+json">{
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Site1",
-    "logo": "images/LOGO.png",
-    "sameAs": []
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1",
+		"logo": "images/LOGO.png",
+		"sameAs": []
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="alumno">
