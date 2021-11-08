@@ -38,7 +38,7 @@ $i=0;
 				
 			               <form  action="profesor.php" method="post"  class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
 			                <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent;" type="submit" name="enviar" value="<?php echo $cur[$i];?>"><br>
-			                <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent;" name="enviar2" value="<?php echo $mat[$i];?>"><br>
+			                <input style="background: transparent; margin: 0px  0px 75% ; padding: 0px -100px 0px 0px; border-color: transparent;" name="enviar2" value="<?php echo $mat[$i];?>"><br>
 							</form>
 					
 			 </div>
