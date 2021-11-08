@@ -99,6 +99,7 @@ $i=0;
                 </div>
                 <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-3">
                   <div class="u-container-layout u-similar-container u-container-layout-5"><span class="u-icon u-icon-circle u-text-custom-color-3 u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-df7d"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-df7d" style="enable-background:new 0 0 512 512;"><g><g><path d="M304,96H112c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h192c8.832,0,16-7.168,16-16C320,103.168,312.832,96,304,96z"></path>
+
 </g>
 </g><g><g><path d="M240,160H112c-8.832,0-16,7.168-16,16c0,8.832,7.168,16,16,16h128c8.832,0,16-7.168,16-16    C256,167.168,248.832,160,240,160z"></path>
 </g>
@@ -123,6 +124,23 @@ $i=0;
                 </div>
 
               </div>
+
+
+
+<div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-4" style="margin: 20px 0px 0px 0px ; width: 250px">
+                  <div class="u-container-layout u-similar-container u-container-layout-6"><span class="u-icon u-icon-circle u-text-custom-color-3 u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0229"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-0229"><g><path d="m328.474 173.528c0-4.142-3.357-7.5-7.5-7.5h-93.906c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h93.906c4.142 0 7.5-3.358 7.5-7.5z"></path><path d="m108.973 303.838c0 10.958 8.915 19.872 19.872 19.872h44.522c10.957 0 19.872-8.915 19.872-19.872v-44.315l6.971-6.971c2.929-2.929 2.929-7.678 0-10.606-2.929-2.93-7.678-2.929-10.606 0l-2.785 2.785c-3.543-3.27-8.26-5.287-13.451-5.287h-44.522c-10.958 0-19.872 8.915-19.872 19.872v44.522zm15-44.522c0-2.686 2.186-4.872 4.872-4.872h44.522c1.054 0 2.024.345 2.822.916l-23.061 23.061-5.316-5.316c-2.929-2.929-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l10.62 10.62c1.464 1.465 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197l19.808-19.808v29.315c0 2.687-2.186 4.872-4.872 4.872h-44.522c-2.687 0-4.872-2.186-4.872-4.872v-44.522z"></path><path d="m227.068 274.08c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h34.311c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5z"></path><path d="m108.973 411.887c0 10.958 8.915 19.872 19.872 19.872h44.522c10.957 0 19.872-8.915 19.872-19.872v-44.521c0-10.958-8.915-19.872-19.872-19.872h-44.522c-10.958 0-19.872 8.915-19.872 19.872zm15-44.522c0-2.687 2.186-4.872 4.872-4.872h44.522c2.686 0 4.872 2.186 4.872 4.872v44.521c0 2.687-2.186 4.872-4.872 4.872h-44.522c-2.687 0-4.872-2.186-4.872-4.872z"></path><path d="m473.44 175.447c-.029-7.25-2.854-16.19-9.437-22.757-11.956-12.68-35.253-12.556-47.466 1.973v-91.173c0-17.027-13.853-30.88-30.88-30.88h-71.364v-14.737c.001-9.855-8.017-17.873-17.872-17.873h-137.743c-9.855 0-17.874 8.018-17.874 17.873v14.737h-71.366c-17.027 0-30.88 13.853-30.88 30.88v417.63c0 17.027 13.853 30.88 30.88 30.88h316.22c17.027 0 30.88-13.853 30.88-30.88v-199.543c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v199.543c0 8.756-7.124 15.88-15.88 15.88h-316.22c-8.756 0-15.88-7.124-15.88-15.88v-417.63c0-8.756 7.124-15.88 15.88-15.88h44.141v15.637c-.442 18.265 17.822 34.935 37.188 31.156l69.194-12.311c4.987-.887 10.044-.887 15.028-.002l69.349 12.321c17.361 3.867 37.888-11.746 37.182-31.157v-15.644h30.139v151.937l-125.343 125.349c-7.218 6.771-13.124 14.938-16.403 26.205l-10.073 36.534c-.28 3.191-.054 10.579 9.224 9.224l36.525-10.071c9.138-2.325 19.326-8.817 26.213-16.385l79.855-79.86v174.677c0 1.042-.848 1.89-1.891 1.89h-284.428c-1.042 0-1.89-.848-1.89-1.89v-389.736c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v389.736c0 9.313 7.577 16.89 16.89 16.89h284.43c9.313 0 16.891-7.577 16.891-16.89v-189.678l77.353-77.353h-.001c5.175-4.883 9.526-14.307 9.429-22.742zm-317.636-157.574c0-1.584 1.289-2.873 2.874-2.873h137.743c1.584 0 2.873 1.289 2.873 2.873v14.737h-143.49zm170.715 45.38c.151 8.977-8.834 18.368-19.558 16.388l-69.349-12.321c-3.361-.597-6.747-.896-10.133-.896-3.39 0-6.78.299-10.147.898l-69.192 12.312c-8.815 1.722-19.633-5.484-19.561-16.387v-15.635h197.94zm126.884 124.326-22.158 22.159-24.283-24.283 22.159-22.16c5.873-5.89 17.028-7.208 24.272 0 5.446 5.461 7.617 16.757.01 24.284zm-166.904 166.914-24.283-24.283 134.14-134.147 24.283 24.283zm100.159-306.832c8.29.52 14.88 7.411 14.88 15.83v106.172l-14.88 14.884zm-142.285 307.428c.515-1.226 1.573-7.077 7.369-14.14l24.008 24.008c-5.628 6.415-29.274 11.341-37.938 13.93z"></path><path d="m200.209 133.3c-2.929-2.93-7.678-2.929-10.606 0l-3.098 3.098c-3.507-3.102-8.099-5.003-13.138-5.003h-44.522c-10.958 0-19.872 8.915-19.872 19.872v44.522c0 10.957 8.915 19.872 19.872 19.872h44.522c10.957 0 19.872-8.915 19.872-19.872v-44.522c0-.125-.016-.247-.019-.371l6.99-6.99c2.929-2.928 2.929-7.677-.001-10.606zm-21.97 62.489c0 2.686-2.186 4.872-4.872 4.872h-44.522c-2.687 0-4.872-2.186-4.872-4.872v-44.522c0-2.687 2.186-4.872 4.872-4.872h44.522c.898 0 1.73.261 2.453.687l-22.693 22.693-5.316-5.316c-2.929-2.929-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l10.62 10.62c1.464 1.465 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197l19.808-19.808z"></path>
+</g></svg></span>
+                    <a href="javascript:abrirb()" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-1">Crear/corregir<br>Tarea/Evaluaciones
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+
               <?php
                   $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Alumno' and cursos='".$h."'and materias='".$j."'");
                   $i=0;
@@ -148,7 +166,8 @@ $i=0;
                         </form>
                         </div>
                            </div>
-                           <div class="calendar1" id="calendar1" style="display: none; position: absolute center;">
+
+    <div class="calendar1" id="calendar1" style="display: none; position: absolute center;">
     <section class="u-clearfix u-section-1" id="sec-9027">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-container-style u-group u-radius-15 u-shape-round u-group-1">
@@ -191,8 +210,66 @@ $i=0;
                 <input type="submit" name="guardar" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
                 <a href="javascript:cerrara()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                     </form>
+                    
                     <?php
                      include("subirLink.php");
+                    ?>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+
+
+<div class="calendar3" id="calendar3" style="display: none; position: absolute center;">
+    <section class="u-clearfix u-section-1" id="sec-9027">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-container-style u-group u-radius-15 u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1" style="height: 780px; ">
+            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2" style="margin: 50px 0px 0px 0px; width: 900px">
+              <div class="u-container-layout u-container-layout-2" style="height: 430px; ">
+                <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"  style="margin-top: 0px; height: 400px "></div>
+                <h1 class="u-text u-text-body-alt-color u-text-1" style="margin-top: -320px; ">Subir</h1>
+                <div style="margin: 20px 10px 10px 150px">
+                <form method="POST">
+                <input placeholder="Link:" class=" u-text-3" type="text" name="link1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                <input placeholder="Materia:" class=" u-text-3" type="text" name="materia1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+                
+                  <option disabled="">Seleccione el año al que pertenece:</option>
+                  <option style="margin: 0px 0px 0px 15px">1°A</option>
+                  <option>1°B</option>
+                  <option>1°C</option>
+                  <option>2°A</option>
+                  <option>2°B</option>
+                  <option>2°C</option>
+                  <option>3°A</option>
+                  <option>3°B</option>
+                  <option>3°C</option>
+                  <option>4°A</option>
+                  <option>4°B</option>
+                  <option>4°C</option>
+                  <option>5°A</option>
+                  <option>5°B</option>
+                  <option>5°C</option>
+                  <option>6°A</option>
+                  <option>6°B</option>
+                  <option>6°C</option>
+                  <option>7°A</option>
+                  <option>7°B</option>
+                  <option>7°C</option>
+                </select>
+                </div>
+                </h1>
+                <input type="submit" name="guardar1" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
+                <a href="javascript:cerrara()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
+                    </form>
+                    <?php
+                     include("subirEval.php");
                     ?>
               </div>
             </div>
@@ -201,15 +278,15 @@ $i=0;
       </div>
     </section>
     </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
 
     <script>
       function abrira(){
         document.getElementById("calendar1").style.display="block"
+      }
+      function abrirb(){
+        document.getElementById("calendar3").style.display="block"
       }
       function cerrara(){
         document.getElementById("calendar1").style.display="none"
