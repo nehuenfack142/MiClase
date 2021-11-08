@@ -266,7 +266,7 @@ $i=0;
                 </div>
                 </h1>
                 <input type="submit" name="guardar1" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
-                <a href="javascript:cerrara()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
+                <a href="javascript:cerrarb()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                     </form>
                     <?php
                      include("subirEval.php");
@@ -287,6 +287,9 @@ $i=0;
       }
       function abrirb(){
         document.getElementById("calendar3").style.display="block"
+      }
+      function cerrarb(){
+        document.getElementById("calendar3").style.display="none"
       }
       function cerrara(){
         document.getElementById("calendar1").style.display="none"
