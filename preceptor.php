@@ -62,7 +62,7 @@
 </g></svg></span>
                 <a href="asignarD.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-1">Asignar</a>
                 <a href="asignarC.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-2">Roles</a>
-                <a href="" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-3">Tomar faltas<br>
+                <a href="precep.php" class="u-btn u-button-style u-custom-font u-font-oswald u-text-body-alt-color u-btn-3">Tablas<br>
                 </a>
               </div>
 
@@ -73,20 +73,22 @@
                                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
                                       </form>
                        </div>
+
+                </h1>
+                <input type="submit" name="guardar" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
+                <a href="javascript:cerrara()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
+                    </form>
+                    <?php
+                     include("subirLink.php");
+                    ?>
+                
           </div>
 
         </div>
 
       </div>
 
-    </section>
     
-    
-    
-    </section>
- 
-    <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
-}</style>
     
     
     
