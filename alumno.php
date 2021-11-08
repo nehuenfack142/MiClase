@@ -126,7 +126,7 @@ $i=0;
                           }
                           ?>
 
-        <div class="calendar2" id="calendar2" style="background-color: #89d0ca; margin: 20px 0px; height:  430px; border-radius: 20px">
+        <div class="calendar2" id="calendar2" style="display: none;ackground-color: #89d0ca; margin: 20px 0px; height:  430px; border-radius: 20px">
                         <form method="POST"  style="background-color: #5e35b1; margin: -10px 10px 10px 10px ; height: auto; border-radius: 20px">
                           <h1 style="margin: 20px; color: #fff">Cominicacion</h1>
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
