@@ -14,8 +14,8 @@
     <meta name="generator" content="Nicepage 3.28.7, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
-    
-    
+
+
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -33,7 +33,7 @@
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96" >
         </a>
         <?php
-        include("mostrar.php"); 
+        include("mostrar.php");
         ?>
         <a href="index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" style="margin: -50px 0px 0px 800px">volver atras</a>
       </div></header>
@@ -66,32 +66,16 @@
                 </a>
               </div>
 
-            </div>
-                <div class="datos2" style="margin: 60px -145px 500px 15px; ">
-                          
-                              <form  action="tutorialesPe.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
-                                      <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
-                                      </form>
-                       </div>
-
-                </h1>
-                <input type="submit" name="guardar" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
-                <a href="javascript:cerrara()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
-                    </form>
-                    <?php
-                     include("subirLink.php");
-                    ?>
-                
-          </div>
+            </div>              
 
         </div>
 
       </div>
 
-    
-    
-    
-    
+
+
+
+
     <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="politca-y-terminos.html" target="_blank">
         <span>Terminos y condicines</span>

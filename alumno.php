@@ -15,10 +15,10 @@
     <meta name="generator" content="Nicepage 3.24.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
-    
-    
-    
-    
+
+
+
+
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -36,7 +36,7 @@
           <img src="images/LOGO.png" class="u-logo-image u-logo-image-1" data-image-width="96">
         </a>
         <?php
-        include("mostrar.php"); 
+        include("mostrar.php");
         ?>
         <?php
         if (isset($_GET['enviar'])) {
@@ -54,7 +54,7 @@ $i=0;
           $materia= $row['materias'];
           $cursos = $row['cursos'];
           $id = $row['id'];
-          $i++; 
+          $i++;
 
     }
   }
@@ -73,23 +73,94 @@ $i=0;
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
             <div class="u-image u-image-circle u-image-1" alt="" data-image-width="920" data-image-height="800"></div>
             <h6 class="u-text u-text-1">
-              
+
             </h6>
             <h6 class="u-text u-text-2">
               <font color="#ffffff"><?php echo "$name";?><br><?php echo "$tipo";?></font>
             </h6>
             <div class="u-list u-list-1" >
               <div class="datos2" style="margin: 0px 0px 50px 0px; ">
-          
+
               <form  action="tutorialesA.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
                       </form>
               <form  action="verfaltas.php" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Ver Faltas"><br>
                       </form>
-              <form  action="enviarcarpetas.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+
+
+
+
+
+
+
+
+                    <div >
+              <form  action="javascript:abrirb()" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Enviar Carpeta"><br>
                       </form>
+                    </div>
+                    <div class="calendar1" id="calendar1" style="display: none; position: absolute center;">
+                    <section class="u-clearfix u-section-1" id="sec-9027">
+                      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                        <div class="u-container-style u-group u-radius-15 u-shape-round u-group-1">
+                          <div class="u-container-layout u-container-layout-1" style="height: 780px; ">
+                            <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2" style="margin: 50px 0px 0px 0px; width: 900px">
+                              <div class="u-container-layout u-container-layout-2" style="height: 430px; ">
+                                <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"  style="margin-top: 0px; height: 400px "></div>
+                                <h1 class="u-text u-text-body-alt-color u-text-1" style="margin-top: -320px; ">Subir</h1>
+                                <div style="margin: 20px 10px 10px 150px">
+                                <form method="POST">
+                                <input placeholder="Link:" class=" u-text-3" type="text" name="link" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                                <input placeholder="Materia:" class=" u-text-3" type="text" name="materia" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+
+                                  <option disabled="">Seleccione el año al que pertenece:</option>
+                                  <option style="margin: 0px 0px 0px 15px">1°A</option>
+                                  <option>1°B</option>
+                                  <option>1°C</option>
+                                  <option>2°A</option>
+                                  <option>2°B</option>
+                                  <option>2°C</option>
+                                  <option>3°A</option>
+                                  <option>3°B</option>
+                                  <option>3°C</option>
+                                  <option>4°A</option>
+                                  <option>4°B</option>
+                                  <option>4°C</option>
+                                  <option>5°A</option>
+                                  <option>5°B</option>
+                                  <option>5°C</option>
+                                  <option>6°A</option>
+                                  <option>6°B</option>
+                                  <option>6°C</option>
+                                  <option>7°A</option>
+                                  <option>7°B</option>
+                                  <option>7°C</option>
+                                </select>
+                                </div>
+                                </h1>
+                                <input type="submit" name="guardar" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
+                                <a href="javascript:cerrara()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
+                                    </form>
+
+                                    <?php
+                                     include("subirLink.php");
+                                    ?>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    </div>
+
+
+
+
+
+
             </div>
               <div class="u-repeater u-repeater-1">
                 <div class="u-container-style u-custom-color-5 u-list-item u-radius-15 u-repeater-item u-shape-round u-list-item-1">
@@ -116,13 +187,68 @@ $i=0;
 </g>
 </g></svg></span>
                     <a href="javascript:abrir()" class="u-btn u-button-style u-custom-font u-font-oswald u-text-custom-color-3 u-btn-3">Chat<br>
-                      
+
                     </a>
                   </div>
                 </div>
               </div>
-              
+              <div class="calendar3" id="calendar3" style="display: none; position: absolute center;">
+              <section class="u-clearfix u-section-1" id="sec-9027">
+                <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                  <div class="u-container-style u-group u-radius-15 u-shape-round u-group-1">
+                    <div class="u-container-layout u-container-layout-1" style="height: 780px; ">
+                      <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2" style="margin: 50px 0px 0px 0px; width: 900px">
+                        <div class="u-container-layout u-container-layout-2" style="height: 430px; ">
+                          <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"  style="margin-top: 0px; height: 400px "></div>
+                          <h1 class="u-text u-text-body-alt-color u-text-1" style="margin-top: -320px; "></h1>
+                          <div style="margin: 20px 10px 10px 150px">
+                          <form method="POST">
+                          <input placeholder="Link:" class=" u-text-3" type="text" name="link2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                          <input placeholder="Materia:" class=" u-text-3" type="text" name="materia2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                          <select placeholder="Curso:" class=" u-text-3" type="text" name="curso2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+
+                            <option disabled="">Seleccione el año al que pertenece:</option>
+                            <option style="margin: 0px 0px 0px 15px">1°A</option>
+                            <option>1°B</option>
+                            <option>1°C</option>
+                            <option>2°A</option>
+                            <option>2°B</option>
+                            <option>2°C</option>
+                            <option>3°A</option>
+                            <option>3°B</option>
+                            <option>3°C</option>
+                            <option>4°A</option>
+                            <option>4°B</option>
+                            <option>4°C</option>
+                            <option>5°A</option>
+                            <option>5°B</option>
+                            <option>5°C</option>
+                            <option>6°A</option>
+                            <option>6°B</option>
+                            <option>6°C</option>
+                            <option>7°A</option>
+                            <option>7°B</option>
+                            <option>7°C</option>
+                          </select>
+                          </div>
+                          </h1>
+                          <input type="submit" name="guardar2" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
+                          <a href="javascript:cerrarb()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
+                              </form>
+
+                              <?php
+                               include("subirCarpeta.php");
+                              ?>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              </div>
                   <?php
+
                   $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."'");
                   $i=0;
                   while ($row = $prof -> fetch_array()){
@@ -147,7 +273,7 @@ $i=0;
                           <a href="javascript:cerrar()" style="margin: -200px 0px 0px 650px; color: red; ">X</a>
                         </form>
                            </div>
- 
+
             </div>
           </div>
         </div>
@@ -162,7 +288,7 @@ $i=0;
             <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Tareas&nbsp;</h6>
                  <?php
                    include("Tareas.php");
-                 ?>   
+                 ?>
           </div>
         </div>
       </div>
@@ -179,21 +305,27 @@ $i=0;
             <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Evaluaciones&nbsp;</h6>
                  <?php
                    include("verEval.php");
-                 ?>   
+                 ?>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    
+
+
+
+
     <section class="u-backlink u-clearfix u-grey-80">
       <a href= "politca-y-terminos.html"class="u-link" href="politca-y-terminos.html" target="_blank">
         <span>Terminos y condicines</span>
       </a>
     </section>
     <script>
+      function abrirb(){
+        document.getElementById("calendar3").style.display="block"
+      }
+      function cerrarb(){
+        document.getElementById("calendar3").style.display="none"
+      }
       function abrir(){
         document.getElementById("calendar2").style.display="block"
       }
