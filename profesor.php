@@ -38,6 +38,30 @@
         <?php
         include("mostrar.php"); 
         ?>
+        <?php
+          $h = $_POST['enviar'];
+          $j = $_POST['enviar2'];
+$inc = include("con_db.php");
+if(!isset($_SESSION)){
+session_start();
+$seccion=$_SESSION['email'];}
+{
+$resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
+$i=0;
+  if ($resultado) {
+        while ($row = $resultado -> fetch_array()){
+          $materia= $row['materias'];
+          $cursos = $row['cursos'];
+          $id = $row['id'];
+          $i++; 
+
+    }
+  }
+  $cons=$conex->query("SELECT id FROM datos where tipousuario ='Alumno' and materias='".$j."' and cursos='".$h."' ");
+          $filas= mysqli_num_rows($cons);
+
+}
+?>
         <a href="cursos.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a>
       </div></header> 
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-d7dd">
@@ -99,14 +123,22 @@
                 </div>
 
               </div>
+              <?php
+                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Alumno' and cursos='".$h."'and materias='".$j."'");
+                  $i=0;
+                  while ($row = $prof -> fetch_array()){
+                          $nom[$i] = $row['nombre'];
+                          $ema[$i] = $row['email'];
+                          $i++;
+                          }
+                          ?>
               <div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
                 <div style="margin: 50px 0px 0px 0px; padding: 10px 10px 10px 10px; background-color: #5e35b1; border-radius: 20px; width: 730px  ">
                         <form method="POST" style="width: 700px; background-color: #89d0ca; margin: 0px 0px 0px 0px;  border-radius: 20px;">
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                            <option value="josueluna650@gmail.com">Profe1</option>
-                            <option value="01josueluna@gmail.com">Profe2</option>
-                            <option value="01lunajosue@gmail.com">Profe3</option>
-                            <option value="triaccanehuen.nt56@gmail.com">Profe4</option>
+                          <?php for($i=0;$i<$filas;$i++){ ?>
+                            <option value="<?php echo "$ema[$i]";?>"><?php echo "$nom[$i]";?></option>
+                            <?php } ?>
                           </select>
 
                           <input type="text" placeholder ="Asunto" name="asunto" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
