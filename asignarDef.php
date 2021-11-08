@@ -44,6 +44,14 @@ if (isset($_POST['guardar'])) {
         <h3 class="bad">¡Ingrese antes un tipo de Usuario!</h3>
            <?php
         }else 
+        if (!empty($cursoso) && !empty($tipousuario) && $tipousuario == 'Preceptor'){
+        $consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','')";
+        $resultado = mysqli_query($conex,$consulta);
+        }else
+        if (empty($cursoso) && !empty($tipousuario) && $tipousuario == 'Preceptor'){
+        $consulta = "UPDATE datos SET cursos ='$curso' WHERE email like '".$mail."'";
+        $resultado = mysqli_query($conex,$consulta);
+        }else
         if (!empty($cursoso) && !empty($materiaa) && !empty($tipousuario) && $tipousuario == 'Alumno'){
         $consulta = "INSERT INTO datos(id,tipousuario,nombre,email,fecha_reg,contraseña,cursos,materias) VALUES ('','".$tipousuario."','".$name."','".$mail."','".$fecha."','".$contra."','".$curso."','".$materia."')";
         $consultaa = "UPDATE datos SET cursos ='$curso' WHERE email like '".$mail."'";
