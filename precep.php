@@ -55,7 +55,7 @@ $i=0;
 
     }
   }
-$cons=$conex->query("SELECT id FROM datos where tipousuario ='Preceptor'  ");
+          $cons=$conex->query("SELECT id FROM datos where tipousuario ='Preceptor' and email ='".$seccion."' ");
           $filas= mysqli_num_rows($cons);
 }
 ?>
@@ -115,20 +115,34 @@ $cons=$conex->query("SELECT id FROM datos where tipousuario ='Preceptor'  ");
                 </div>
 
               </div><!--CHAT PRECEPTOR FALTA ARREGLAR ES EL COMENTARIO DE ABAJO-->
-                <!--<?php
-                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Alumno' and tipousuario ='Profesor' and cursos='".$cursos."' ");
+                <?php
+                $todos=0;
+                  for ($i=0; $i <$filas ; $i++) { 
+                    $conse=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and cursos='".$cursos[$i]."' or tipousuario ='Alumno' and cursos='".$cursos[$i]."'");
+                    $gente= mysqli_num_rows($conse);
+                    
+                    $todos+=$gente;
+                  }
+                  
                   $i=0;
-                  while ($row = $prof -> fetch_array()){
+                  for ($f=0; $f <$filas ; $f++) { 
+                    $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Alumno' and cursos='".$cursos[$f]."' or tipousuario ='Profesor' and cursos='".$cursos[$f]."' ");
+                    while ($row = $prof -> fetch_array()){
                           $nom[$i] = $row['nombre'];
                           $ema[$i] = $row['email'];
+                          
+
                           $i++;
                           }
-                         ?> -->
+                  }
+                  
+                         ?> 
+
               <div class="calendar2" id="calendar2" style="display: none; position: absolute center;">
                 <div style="margin: 50px 0px 0px 0px; padding: 10px 10px 10px 10px; background-color: #5e35b1; border-radius: 20px; width: 730px  ">
                         <form method="POST" style="width: 700px; background-color: #89d0ca; margin: 0px 0px 0px 0px;  border-radius: 20px;">
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                          <?php for($i=0;$i<$filas;$i++){ ?>
+                          <?php for($i=0;$i<$todos;$i++){ ?>
                             <option value="<?php echo "$ema[$i]";?>"><?php echo "$nom[$i]";?></option>
                             <?php } ?>
                           </select>
