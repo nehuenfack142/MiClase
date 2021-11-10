@@ -35,7 +35,7 @@
         <?php
         include("mostrar.php");
         ?>
-        <a href="index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" style="margin: -50px 0px 0px 800px">volver atras</a>
+        <a href="index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" style="margin: -30px 10px 30px 950px ">volver atras</a>
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-9027">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
