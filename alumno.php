@@ -200,7 +200,8 @@ $i=0;
                       <div class="u-container-style u-custom-color-5 u-group u-radius-15 u-shape-round u-group-2" style="margin: 50px 0px 0px 0px; width: 900px">
                         <div class="u-container-layout u-container-layout-2" style="height: 430px; ">
                           <div class="u-custom-color-3 u-expanded-width u-radius-15 u-shape u-shape-round u-shape-1"  style="margin-top: 0px; height: 400px "></div>
-                          <h1 class="u-text u-text-body-alt-color u-text-1" style="margin-top: -320px; "></h1>
+                          <h1 class="u-text u-text-body-alt-color u-text-1" style="margin-top: -320px;"><h1 style="margin: 0px 0px -10px 100px" class="u-custom-color-3">Subir carpeta</h1></h1>
+                          
                           <div style="margin: 20px 10px 10px 150px">
                           <form method="POST">
                           <input placeholder="Link:" class=" u-text-3" type="text" name="link2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>

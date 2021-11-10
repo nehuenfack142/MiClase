@@ -49,7 +49,7 @@
         ?>
         
         <div class=atras>
-        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">volver atras</a></div>
+        <a href="Index.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" style="margin: -30px 10px 30px 950px ">volver atras</a></div>
       </div></header> 
     <section class="u-clearfix u-grey-15 u-section-1" id="sec-4f9d">
       <div class="u-clearfix u-sheet u-sheet-1">
