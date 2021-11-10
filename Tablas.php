@@ -12,7 +12,7 @@ $i=0;
 			$id = $row['id'];
 			$i++;
 		}
-	}$cons=$conex->query("SELECT id FROM datos where email ='".$email."' ");
+			}$cons=$conex->query("SELECT id FROM datos where email ='".$email."' ");
 			$filas= mysqli_num_rows($cons);
 
 }
@@ -25,17 +25,42 @@ $i=0;
 				$consa=$conex->query("SELECT id FROM tabla ");
 				$filass= mysqli_num_rows($consa);
                 $i=0;
-				$tabla = mysqli_query($conex,"SELECT * FROM tabla where curso ='".$array[$i]."' ");
-                  while ($row = $tabla -> fetch_array()){
+				
+                 for($e=0;$e<$filas;$e++){
+                 $tabla = mysqli_query($conex,"SELECT * FROM tabla where curso= '".$array[$e]."' ");
+                 while ($row = $tabla -> fetch_array()){
                           $a[$i]= $row['curso'];
 						  $b[$i]= $row['link'];
-						  if ($i<$filas-1) {
-						  $i++;	
-						  $tabla = mysqli_query($conex,"SELECT * FROM tabla where curso ='".$array[$i]."' ");
-						  }
-                          }
-                   
-				for($i=0;$i<$filas;$i++){ ?>
+						  $c[$i] =$row['id'];
+					      $i++;
+							}}
+					$i=0;
+					$cant=0;
+					while (!empty($c[$i])) {
+						$cant+=1;
+						$i++;
+					}
+					echo $cant;
+
+						  //if ($idd[$e]==1) {
+						  //$a[$e-1]=$a[$e];
+						  //$e++;	
+						  //$tabla = mysqli_query($conex,"SELECT * FROM tabla where curso ='".$array[$i]."' and id='".$idd[$e]."' ");
+						  //}
+						  //if ($a[$e]==$a[$e-1]) {
+						  //$e++;
+						  //$i=$i;	
+						  //$tabla = mysqli_query($conex,"SELECT * FROM tabla where curso ='".$array[$i]."' and id='".$idd[$e]."' ");
+						  //}else 
+						  //if ($a[$e]!=$a[$e-1]){
+						  //$e++;
+						  //$i++;	
+						  //$tabla = mysqli_query($conex,"SELECT * FROM tabla where curso ='".$array[$i]."' and id='".$idd[$e]."' ");
+						  //}
+ 
+                          //}
+                   			
+				for($i=0;$i<$cant;$i++){ ?>
 				<div class="datos1">
 				<?php if (empty($a[$i])||empty($b[$i])) { ?>
 					<div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" style="margin: 2% 2% 2% -2%;">
