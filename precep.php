@@ -220,22 +220,25 @@ $i=0;
                                 <td>CURSO</td>
                             </tr>
                             <?php
-                            $i=0;
-                            $p = "SELECT * FROM datos where cursos= '".$cursos[$i]."'";
-                            $r = mysqli_query($conex,$p);
-                            while ($row = $r -> fetch_array()) { ?>
+                            
+                            
+                            for ($u=0; $u <$filas ; $u++) { 
+                              $i=0;
+                              $p = "SELECT * FROM datos where cursos= '".$cursos[$u]."'";
+                              echo $cursos[$u];
+                              $r = mysqli_query($conex,$p);
+                              while ($row = $r -> fetch_array()) { ?>
                             <tr>
-                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['tipousuario']; ?></td>
-                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['nombre']; ?></td>
-                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['email']; ?></td>
-                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['cursos']; ?></td>
-                               <?php   if ($i<$filas-1) {
-                               $i++;
-                                $p = "SELECT * FROM datos where cursos= '".$cursos[$i]."'";
-                               }
-                                ?>
+                                <td class="u-border-2 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['tipousuario']; ?></td>
+                                <td class="u-border-2 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['nombre']; ?></td>
+                                <td class="u-border-2 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['email']; ?></td>
+                                <td class="u-border-2 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['cursos']; ?></td>
+                               
                             </tr>
                             <?php } ?>
+                            <?php } ?>
+                            
+                            
                         </table>
                         <a href="javascript:cerrarb()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                     </div>
