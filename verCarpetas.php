@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['enviar2'])) {
-	$h = $_POST['enviar'];;//curso
+	$h = $_POST['enviar'];//curso
 	$j = $_POST['enviar2'];//materia
 }
 $inc = include("con_db.php");
@@ -29,10 +29,10 @@ $i=0;
 
 
 			<?php
-				$consa=$conex->query("SELECT id FROM evaluaciones ");
+				$consa=$conex->query("SELECT id FROM carpetas ");
 				$filass= mysqli_num_rows($consa);
 
-					$tabla = mysqli_query($conex,"SELECT * FROM evaluaciones where curso ='".$h."' and materias ='".$j."'");
+					$tabla = mysqli_query($conex,"SELECT * FROM carpetas where curso ='".$h."' and materias ='".$j."'");
 					$i=0;
 					while ($row = $tabla -> fetch_array()){
 					$arrey[$i]= $ca= $row['materias'];
@@ -47,7 +47,7 @@ $i=0;
 					if (empty($var)) {
 						$var='';
 					}
-				$tabla = mysqli_query($conex,"SELECT * FROM evaluaciones where curso ='".$h."' and materias ='".$var."' ");
+				$tabla = mysqli_query($conex,"SELECT * FROM carpetas where curso ='".$h."' and materias ='".$var."' ");
 				while ($row = $tabla -> fetch_array()){?>
 				<div class="datos1">
 				<div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" style="margin: 2% 2% 2% -2%;">

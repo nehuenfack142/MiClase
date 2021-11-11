@@ -51,6 +51,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 $i=0;
   if ($resultado) {
         while ($row = $resultado -> fetch_array()){
+          $name=$row['nombre'];
           $materia= $row['materias'];
           $cursos = $row['cursos'];
           $id = $row['id'];
@@ -58,8 +59,9 @@ $i=0;
 
     }
   }
-  $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and materias='".$h."' and cursos='".$cursos."' ");
+          $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and materias='".$h."' and cursos='".$cursos."' ");
           $filas= mysqli_num_rows($cons);
+          
 
 }
 ?>
@@ -84,7 +86,7 @@ $i=0;
               <form  action="tutorialesA.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
                       </form>
-              <form  action="verfaltas.php" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+              <form  action="<?php echo "$aaa";?>" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Ver Faltas"><br>
                       </form>
 
@@ -205,33 +207,10 @@ $i=0;
                           <div style="margin: 20px 10px 10px 150px">
                           <form method="POST">
                           <input placeholder="Link:" class=" u-text-3" type="text" name="link2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                          <input placeholder="Nombre:" class=" u-text-3" type="text" name="nombre2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                          <input placeholder="Materia:" class=" u-text-3" type="text" name="materia2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                          <select placeholder="Curso:" class=" u-text-3" type="text" name="curso2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+                          <input value="<?php echo $name; ?>" class=" u-text-3" type="text" name="nombre2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                          <input value="<?php echo $h; ?>" class=" u-text-3" type="text" name="materia2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                          <input type="text" name="" value="<?php echo $cursos; ?>" class=" u-text-3" type="text" name="curso2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
 
-                            <option disabled="">Seleccione el año al que pertenece:</option>
-                            <option style="margin: 0px 0px 0px 15px">1°A</option>
-                            <option>1°B</option>
-                            <option>1°C</option>
-                            <option>2°A</option>
-                            <option>2°B</option>
-                            <option>2°C</option>
-                            <option>3°A</option>
-                            <option>3°B</option>
-                            <option>3°C</option>
-                            <option>4°A</option>
-                            <option>4°B</option>
-                            <option>4°C</option>
-                            <option>5°A</option>
-                            <option>5°B</option>
-                            <option>5°C</option>
-                            <option>6°A</option>
-                            <option>6°B</option>
-                            <option>6°C</option>
-                            <option>7°A</option>
-                            <option>7°B</option>
-                            <option>7°C</option>
-                          </select>
                           </div>
                           </h1>
                           <input type="submit" name="guardar2" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
@@ -251,7 +230,7 @@ $i=0;
               </div>
                   <?php
 
-                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."'");
+                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."' ");
                   $i=0;
                   while ($row = $prof -> fetch_array()){
                           $nom[$i] = $row['nombre'];
@@ -269,8 +248,13 @@ $i=0;
                             <?php } ?>
                           </select>
 
-                          <input type="text" placeholder ="Asunto" name="asunto" required=""  style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                          <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;" ></textarea>
+                          <select placeholder="Curso:" class=" u-text-3" type="text" name="asunto"  style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
+
+                                  <option disabled="">Seleccione el Asunto</option>
+                                  <option style="margin: 0px 0px 0px 15px">Comunicacion</option>
+                                  <option>Pedir Faltas</option>
+                                  <option>Justificar Faltas</option>
+                          <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;" ><?php echo $name; ?> - <?php echo $cursos; ?>:</textarea>
                           <input type="submit" name="enviar" style="margin: 0px 0px 0px 500px; padding: 10px 20px 10px 20px;  background-color: #89d0ca; border-radius: 20px; color: white">
                           <a href="javascript:cerrar()" style="margin: -200px 0px 0px 650px; color: red; ">X</a>
                         </form>

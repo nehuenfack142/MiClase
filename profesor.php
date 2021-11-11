@@ -161,7 +161,7 @@ $i=0;
                           </select>
 
                           <input type="text" placeholder ="Asunto" name="asunto" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
-                          <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;"></textarea>
+                          <textarea placeholder ="Mensaje" name="msg" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px; min-height: 100px;max-height: 200px;min-width: 640px;max-width: 640px;"><?php echo $name; ?> - <?php echo $j; ?>:</textarea>
                           <input type="submit" name="enviar" style="margin: 0px 0px 0px 500px; padding: 10px 20px 10px 20px;  background-color: #5e35b1; border-radius: 20px; color: white">
                           <a href="javascript:cerrar()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                         </form>
@@ -180,32 +180,10 @@ $i=0;
                 <div style="margin: 20px 10px 10px 150px">
                 <form method="POST">
                 <input placeholder="Link:" class=" u-text-3" type="text" name="link" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                <input placeholder="Materia:" class=" u-text-3" type="text" name="materia" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+                <input value="<?php echo $j; ?>" class=" u-text-3" type="text" name="materia" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                <input value="<?php echo $h; ?>" class=" u-text-3" type="text" name="curso" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
 
-                  <option disabled="">Seleccione el año al que pertenece:</option>
-                  <option style="margin: 0px 0px 0px 15px">1°A</option>
-                  <option>1°B</option>
-                  <option>1°C</option>
-                  <option>2°A</option>
-                  <option>2°B</option>
-                  <option>2°C</option>
-                  <option>3°A</option>
-                  <option>3°B</option>
-                  <option>3°C</option>
-                  <option>4°A</option>
-                  <option>4°B</option>
-                  <option>4°C</option>
-                  <option>5°A</option>
-                  <option>5°B</option>
-                  <option>5°C</option>
-                  <option>6°A</option>
-                  <option>6°B</option>
-                  <option>6°C</option>
-                  <option>7°A</option>
-                  <option>7°B</option>
-                  <option>7°C</option>
-                </select>
+                  
                 </div>
                 </h1>
                 <input type="submit" name="guardar" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
@@ -238,32 +216,10 @@ $i=0;
                 <div style="margin: 20px 10px 10px 150px">
                 <form method="POST">
                 <input placeholder="Link:" class=" u-text-3" type="text" name="link1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                <input placeholder="Materia:" class=" u-text-3" type="text" name="materia1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                <select placeholder="Curso:" class=" u-text-3" type="text" name="curso1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+                <input value="<?php echo $j; ?>" class=" u-text-3" type="text" name="materia1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
+                <input value="<?php echo $h; ?>" class=" u-text-3" type="text" name="curso1" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
 
-                  <option disabled="">Seleccione el año al que pertenece:</option>
-                  <option style="margin: 0px 0px 0px 15px">1°A</option>
-                  <option>1°B</option>
-                  <option>1°C</option>
-                  <option>2°A</option>
-                  <option>2°B</option>
-                  <option>2°C</option>
-                  <option>3°A</option>
-                  <option>3°B</option>
-                  <option>3°C</option>
-                  <option>4°A</option>
-                  <option>4°B</option>
-                  <option>4°C</option>
-                  <option>5°A</option>
-                  <option>5°B</option>
-                  <option>5°C</option>
-                  <option>6°A</option>
-                  <option>6°B</option>
-                  <option>6°C</option>
-                  <option>7°A</option>
-                  <option>7°B</option>
-                  <option>7°C</option>
-                </select>
+                  
                 </div>
                 </h1>
                 <input type="submit" name="guardar1" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-1 " style="margin: 0px 0px 0px 250px">
