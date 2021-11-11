@@ -276,7 +276,7 @@ $i=0;
           <div class="u-container-layout u-container-layout-1">
             <div class="u-custom-color-5 u-expanded-width u-radius-20 u-shape u-shape-round u-shape-1"></div>
             <div class="u-custom-color-3 u-radius-20 u-shape u-shape-round u-shape-2"></div>
-            <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Faltas&nbsp;</h6>
+            <h6 class="u-text u-text-1"  style=" color: #fff;  margin: -80px 0px 100px 50px; ">Faltas/Comportamiento&nbsp;</h6>
 
 
 

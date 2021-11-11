@@ -13,7 +13,8 @@ $i=0;
 	if ($resultado) {
 	  		while ($row = $resultado -> fetch_array()){
 			$array[$i]=$materias = $row['materias'];
-			$cursos = $row['cursos'];
+			$arrey[$i]=$cursos = $row['cursos'];
+
 			$id = $row['id'];
 			$cons=$conex->query("SELECT id FROM datos where email ='".$email."' ");
 			$filas= mysqli_num_rows($cons);
@@ -51,11 +52,11 @@ $i=0;
 				while ($row = $tabla -> fetch_array()){?>
 				<div class="datos1">
 				<div class="u-border-4 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3" style="margin: 2% 2% 2% -2%;">
-							<h2 >Evaluacion:<?php echo $row['id'];?></h2>
+							<h2 >Carpeta: <?php echo $row['curso'];?> - <?php echo $row['nombre'];?></h2>
 							<h5><a href="<?php echo $row['link'];?>"><?php echo $row['link'];?></a></h5><br>
 				</div>
 			 </div>
-			<?php } ?>
+			<?php } ?>	
 
 
 			<style>

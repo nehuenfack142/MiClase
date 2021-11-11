@@ -54,11 +54,12 @@ $i=0;
           $name=$row['nombre'];
           $materia= $row['materias'];
           $cursos = $row['cursos'];
+
           $id = $row['id'];
           $i++;
 
     }
-  }
+  } $cursito=$cursos;
           $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and materias='".$h."' and cursos='".$cursos."' ");
           $filas= mysqli_num_rows($cons);
           $aaa = mysqli_query($conex,"SELECT link FROM tabla where curso ='".$cursos."'" );
@@ -211,7 +212,7 @@ $i=0;
                           <input placeholder="Link:" class=" u-text-3" type="text" name="link2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
                           <input value="<?php echo $name; ?>" class=" u-text-3" type="text" name="nombre2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
                           <input value="<?php echo $h; ?>" class=" u-text-3" type="text" name="materia2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px; width: 285px; "><br><br>
-                          <input type="text" name="" value="<?php echo $cursos; ?>" class=" u-text-3" type="text" name="curso2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
+                          <input value="<?php echo $cursito; ?>" class=" u-text-3" type="text" name="curso2" style="margin:0px 0px 0px 15px;padding: 0px 0px 0px 0px ">
 
                           </div>
                           </h1>

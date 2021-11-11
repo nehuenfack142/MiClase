@@ -41,19 +41,19 @@
         <?php
           $h = $_POST['enviar'];
           $j = $_POST['enviar2'];
-$inc = include("con_db.php");
-if(!isset($_SESSION)){
-session_start();
-$seccion=$_SESSION['email'];}
-{
-$resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
-$i=0;
-  if ($resultado) {
-        while ($row = $resultado -> fetch_array()){
-          $materia= $row['materias'];
-          $cursos = $row['cursos'];
-          $id = $row['id'];
-          $i++;
+          $inc = include("con_db.php");
+          if(!isset($_SESSION)){
+          session_start();
+          $seccion=$_SESSION['email'];}
+          {
+          $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."'" );
+          $i=0;
+            if ($resultado) {
+                  while ($row = $resultado -> fetch_array()){
+                    $materia= $row['materias'];
+                    $cursos = $row['cursos'];
+                    $id = $row['id'];
+                    $i++;
 
     }
   }
