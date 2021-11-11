@@ -34,7 +34,7 @@ $i=0;
 				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
 				for($i=0;$i<$filas;$i++){
-					if (empty($A[$i])||empty($B[$i])) { ?>
+					if (empty($cur[$i])||empty($mat[$i] )) { ?>
 						<div class="datos2" style="margin: 0px 0px 50px 0px; ">
 					
 							
