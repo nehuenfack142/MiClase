@@ -206,10 +206,15 @@ $i=0;
       </div>
     </section>
     </div>
-    <div class="calendar3" id="calendar3" style="display: none; position: absolute center;">
+
+   
+      <div class="calendar3" id="calendar3" style="display: none; position: absolute center;">
+         <div style="margin: 50px 0px 0px 0px; padding: 10px 10px 10px 10px; background-color: #5e35b1; border-radius: 20px; width: 730px">
+     <div style="width: 700px; background-color: #89d0ca; margin: 0px 0px 0px 0px;  border-radius: 20px;">
+                <div></div>
                         <table>
                             <tr>
-                                <td>USUARIO</td>
+                                <td >USUARIO</td>
                                 <td>NOMBRE</td>
                                 <td>MAIL</td>
                                 <td>CURSO</td>
@@ -220,10 +225,10 @@ $i=0;
                             $r = mysqli_query($conex,$p);
                             while ($row = $r -> fetch_array()) { ?>
                             <tr>
-                                <td><?php echo $row['tipousuario']; ?></td>
-                                <td><?php echo $row['nombre']; ?></td>
-                                <td><?php echo $row['email']; ?></td>
-                                <td><?php echo $row['cursos']; ?></td>
+                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['tipousuario']; ?></td>
+                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['nombre']; ?></td>
+                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['email']; ?></td>
+                                <td class="u-border-3 u-border-custom-color-3 u-shape u-shape-right u-shape-top u-shape-3"><?php echo $row['cursos']; ?></td>
                                <?php   if ($i<$filas-1) {
                                $i++;
                                 $p = "SELECT * FROM datos where cursos= '".$cursos[$i]."'";
@@ -234,6 +239,8 @@ $i=0;
                         </table>
                         <a href="javascript:cerrarb()" style="margin: 630px; color: red;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">X</a>
                     </div>
+           </div>
+         </div>
             </div>
           </div>
         </div>
