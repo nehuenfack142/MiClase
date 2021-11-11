@@ -49,7 +49,16 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 
 				$tabla = mysqli_query($conex,"SELECT * FROM datos where email ='".$email."' ");
 
-				for($i=0;$i<$filas;$i++){ ?>
+				for($i=0;$i<$filas;$i++){ 
+					if (empty($A[$i])||empty($B[$i])) { ?>
+						<div class="datos2" style="margin: 0px 0px 50px 0px; ">
+						<div >
+							<form  action="alumno.php" method="get"  class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+			                <input style=" background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; margin: -10px -50px -200px -40px ; " type="submit" name="enviar" value="Falta profesores para sus materias...">
+			                
+			              	</form>
+						</div>
+					<?php }else{ ?>
 				<div class="datos2" style="margin: 0px 0px 50px 0px; ">
 						<div >
 							<form  action="alumno.php" method="get"  class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
@@ -59,7 +68,7 @@ $resultado = mysqli_query($conex,"SELECT * FROM datos where email ='".$seccion."
 						</div>
 					
 			 </div>
-			<?php } ?>
+			<?php }} ?>
 		
 
 			<style>

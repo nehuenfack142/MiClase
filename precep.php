@@ -225,7 +225,7 @@ $i=0;
                             for ($u=0; $u <$filas ; $u++) { 
                               $i=0;
                               $p = "SELECT * FROM datos where cursos= '".$cursos[$u]."'";
-                              echo $cursos[$u];
+                              
                               $r = mysqli_query($conex,$p);
                               while ($row = $r -> fetch_array()) { ?>
                             <tr>
