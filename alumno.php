@@ -61,8 +61,10 @@ $i=0;
   }
           $cons=$conex->query("SELECT id FROM datos where tipousuario ='Profesor' and materias='".$h."' and cursos='".$cursos."' ");
           $filas= mysqli_num_rows($cons);
-          
-
+          $aaa = mysqli_query($conex,"SELECT link FROM tabla where curso ='".$cursos."'" );
+           while ($roww = $aaa -> fetch_array()){
+            $como=$roww['link'];
+           }
 }
 ?>
         <a href="materias.php" data-page-id="237575894" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3">Volver atras</a>
@@ -86,7 +88,7 @@ $i=0;
               <form  action="tutorialesA.html" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Tutoriales"><br>
                       </form>
-              <form  action="<?php echo "$aaa";?>" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
+              <form  action="<?php echo "$como";?>" class="u-custom-color-5 u-hover-custom-color-3 u-radius-10 u-text-custom-color-3 u-text-hover-custom-color-5 u-btn-3" >
                       <input style="background: transparent; padding: 24px 900px 24px 50px; border-color: transparent; font: Oswald;" type="submit" value="Ver Faltas"><br>
                       </form>
 
