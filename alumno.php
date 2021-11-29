@@ -233,8 +233,9 @@ $i=0;
               </div>
                   <?php
 
-                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$materia."' ");
+                  $prof = mysqli_query($conex,"SELECT * FROM datos where tipousuario ='Profesor' and cursos='".$cursos."'and materias='".$h."' ");
                   $i=0;
+
                   while ($row = $prof -> fetch_array()){
                           $nom[$i] = $row['nombre'];
                           $ema[$i] = $row['email'];
@@ -244,7 +245,7 @@ $i=0;
 
         <div class="calendar2" id="calendar2" style="display: none;ackground-color: #89d0ca; margin: 20px 0px; height:  430px; border-radius: 20px">
                         <form method="POST"  style="background-color: #5e35b1; margin: -10px 10px 10px 10px ; height: auto; border-radius: 20px">
-                          <h1 style="margin: 20px; color: #fff">Cominicacion</h1>
+                          <h1 style="margin: 20px; color: #fff">Comunicacion</h1>
                           <select name="mail" required="" style="margin: 15px;padding: 10px;width: 640px;font-size: 18px;border: none;margin-bottom: 5px">
                           <?php for($i=0;$i<$filas;$i++){ ?>
                             <option value="<?php echo "$ema[$i]";?>"><?php echo "$nom[$i]";?></option>
